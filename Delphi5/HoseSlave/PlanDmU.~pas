@@ -1,0 +1,210 @@
+unit PlanDmU;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  Db, DBTables, RxMemDS, MyProcs;
+
+type
+  TPlanDm = class(TDataModule)
+    dsRendelesProgram: TDataSource;
+    spGetProgramBase: TStoredProc;
+    dsGetProgramBase: TDataSource;
+    spGetProgramBaseRendelsszm: TStringField;
+    spGetProgramBasePhxrendsz: TStringField;
+    spGetProgramBaseVevirendsz: TStringField;
+    spGetProgramBaseRevzi: TSmallintField;
+    spGetProgramBaseVev: TStringField;
+    spGetProgramBaseFelhasznl: TStringField;
+    spGetProgramBasePozci: TIntegerField;
+    spGetProgramBaseCikkszm: TStringField;
+    spGetProgramBaseSpecifikci: TStringField;
+    spGetProgramBasetmr: TFloatField;
+    spGetProgramBasepsi: TFloatField;
+    spGetProgramBaseMPa: TFloatField;
+    spGetProgramBaseHossz: TFloatField;
+    spGetProgramBaseMe: TStringField;
+    spGetProgramBaseDB: TFloatField;
+    spGetProgramBaseHatrid: TDateTimeField;
+    spGetProgramBaseKonstrukci: TStringField;
+    spGetProgramBaseLlek: TStringField;
+    spGetProgramBaseSodrony: TStringField;
+    spGetProgramBaseId: TStringField;
+    mProgramBase: TRxMemoryData;
+    dsHonapok: TDataSource;
+    qHonapok: TQuery;
+    qHonapokHonapKod: TIntegerField;
+    qHonapokHonapHNev: TStringField;
+    qHonapokHonapENev: TStringField;
+    qGyartoHelyek: TQuery;
+    dsGyartoHelyek: TDataSource;
+    qGyartoHelyekHelyKod: TIntegerField;
+    qGyartoHelyekHelyNev: TStringField;
+    qGyartoHelyekAktiv: TBooleanField;
+    mProgramBaseRendelsszm: TStringField;
+    mProgramBasePhxrendsz: TStringField;
+    mProgramBaseVevirendsz: TStringField;
+    mProgramBaseRevzi: TSmallintField;
+    mProgramBaseVev: TStringField;
+    mProgramBaseFelhasznl: TStringField;
+    mProgramBasePozci: TIntegerField;
+    mProgramBaseCikkszm: TStringField;
+    mProgramBaseSpecifikci: TStringField;
+    mProgramBasetmr: TFloatField;
+    mProgramBasepsi: TFloatField;
+    mProgramBaseMPa: TFloatField;
+    mProgramBaseHossz: TFloatField;
+    mProgramBaseMe: TStringField;
+    mProgramBaseDB: TFloatField;
+    mProgramBaseHatrid: TDateTimeField;
+    mProgramBaseKonstrukci: TStringField;
+    mProgramBaseLlek: TStringField;
+    mProgramBaseSodrony: TStringField;
+    mProgramBaseId: TStringField;
+    qLelekAnyag: TQuery;
+    qLelekAnyagAnyagkd: TSmallintField;
+    qLelekAnyagAnyagnv: TStringField;
+    qLelekAnyagRgztette: TStringField;
+    qLelekAnyagRgzipont: TDateTimeField;
+    qSodronyTipus: TQuery;
+    qSodronyTipusSodronykd: TSmallintField;
+    qSodronyTipusSodronynv: TStringField;
+    qSodronyTipusRgztette: TStringField;
+    qSodronyTipusRgzidpont: TDateTimeField;
+    qStatusz: TQuery;
+    qStatuszStatuszKod: TSmallintField;
+    qStatuszStatuszNev: TStringField;
+    qStatuszColor: TStringField;
+    spGetProgramBaseLngll: TBooleanField;
+    mProgramBaseLngll: TBooleanField;
+    spGetProgramBaseBelsggecs: TBooleanField;
+    mProgramBaseBelsggecs: TBooleanField;
+    spGetProgramBaseKlsggecs: TBooleanField;
+    mProgramBaseKlsggecs: TBooleanField;
+    spGetProgramBaseInterlock: TBooleanField;
+    mProgramBaseInterlock: TBooleanField;
+    spGetProgramBasePoliamid: TBooleanField;
+    mProgramBasePoliamid: TBooleanField;
+    spGetProgramBaseKlsvdelem: TBooleanField;
+    spGetProgramBaseOsszetettKulcs: TStringField;
+    mProgramBaseKlsvdelem: TBooleanField;
+    mProgramBaseOsszetettKulcs: TStringField;
+    mRecount: TRxMemoryData;
+    mRecountOldCount: TIntegerField;
+    mRecountNewCount: TIntegerField;
+    qRendelesProgram: TQuery;
+    qRendelesProgramRendelsszm: TStringField;
+    qRendelesProgramPozci: TIntegerField;
+    qRendelesProgramRevzi: TIntegerField;
+    qRendelesProgramMegrendel: TStringField;
+    qRendelesProgramFelhasznl: TStringField;
+    qRendelesProgramSpecifikci: TStringField;
+    qRendelesProgramCikkszm: TStringField;
+    qRendelesProgramdb: TIntegerField;
+    qRendelesProgramHossz: TFloatField;
+    qRendelesProgramLlekanyagkd: TSmallintField;
+    qRendelesProgramSodronytipuskd: TSmallintField;
+    qRendelesProgramSodrmennyisg: TFloatField;
+    qRendelesProgramNormaid: TFloatField;
+    qRendelesProgramSttusz: TSmallintField;
+    qRendelesProgramHatrid: TDateTimeField;
+    qRendelesProgramRgztette: TStringField;
+    qRendelesProgramRgzidpont: TDateTimeField;
+    qRendelesProgramProgv: TIntegerField;
+    qRendelesProgramProghnap: TSmallintField;
+    qRendelesProgramMegjegyzs: TStringField;
+    qRendelesProgramrtk: TFloatField;
+    qRendelesProgramLngll: TBooleanField;
+    qRendelesProgramBelsggecs: TBooleanField;
+    qRendelesProgramKlsggecs: TBooleanField;
+    qRendelesProgramInterlock: TBooleanField;
+    qRendelesProgramPoliamid: TBooleanField;
+    qRendelesProgramKlsvdelem: TBooleanField;
+    qRendelesProgramInspektor: TStringField;
+    qRendelesProgramFests: TStringField;
+    qRendelesProgramId: TIntegerField;
+    qRendelesProgramSorrend: TIntegerField;
+    qRendelesProgramsszhossz: TFloatField;
+    qRendelesProgramLlekanyag: TStringField;
+    qRendelesProgramSodronytipus: TStringField;
+    qRendelesProgramllapot: TStringField;
+    qRendelesProgramGyrthely: TStringField;
+    uRendelesProgram: TUpdateSQL;
+    qRendelesProgramGyrtsi_terletkd: TSmallintField;
+    qRendelesProgramKiadott_tvteli: TBooleanField;
+    procedure qRendelesProgramCalcFields(DataSet: TDataSet);
+    procedure qRendelesProgramAfterPost(DataSet: TDataSet);
+    procedure qRendelesProgramAfterDelete(DataSet: TDataSet);
+    procedure qRendelesProgramBeforePost(DataSet: TDataSet);
+    procedure qRendelesProgramNewRecord(DataSet: TDataSet);
+    procedure qRendelesProgramAfterOpen(DataSet: TDataSet);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  PlanDm: TPlanDm;
+  MaxId: integer ;
+  CurrentRecord: array of variant ;
+
+implementation
+
+uses HoseSlaveU;
+
+{$R *.DFM}
+
+procedure TPlanDm.qRendelesProgramCalcFields(DataSet: TDataSet);
+var
+  db: integer ;
+  hossz: double ;
+begin
+  db := DataSet.FieldByName('DB').AsInteger ;
+  Hossz := DataSet.FieldByName('Hossz').AsFloat ;
+  DataSet.FieldByName('Össz hossz').AsFloat := db * Hossz ;
+end;
+
+procedure TPlanDm.qRendelesProgramAfterPost(DataSet: TDataSet);
+begin
+  inc(MainForm.PlanChangeNum) ;
+end;
+
+procedure TPlanDm.qRendelesProgramAfterDelete(DataSet: TDataSet);
+begin
+  inc(MainForm.PlanChangeNum) ;
+end;
+
+procedure TPlanDm.qRendelesProgramBeforePost(DataSet: TDataSet);
+begin
+  DataSet.FieldByName('Rögzítette').AsString := Mainform.CurrentUserName ;
+  DataSet.FieldByName('RögzIdõpont').AsDatetime := Now ;
+end;
+
+procedure TPlanDm.qRendelesProgramNewRecord(DataSet: TDataSet);
+begin
+  inc(MaxId) ;
+  DataSet.FieldByName('Id').AsInteger := MaxId ;
+end;
+
+procedure TPlanDm.qRendelesProgramAfterOpen(DataSet: TDataSet);
+begin
+  MaxId := 0 ;
+  try
+    try
+      qRendelesProgram.DisableControls ;
+      while not qRendelesProgram.Eof do begin
+        if MaxId < qRendelesProgramId.AsInteger then MaxId := qRendelesProgramId.AsInteger ;
+        qRendelesProgram.Next ;
+      end ;
+    finally
+      qRendelesProgram.First ;
+      qRendelesProgram.EnableControls ;
+    end ;
+  except
+    On E: exception do ErrMsg(E.Message) ;
+  end ;
+end;
+
+end.

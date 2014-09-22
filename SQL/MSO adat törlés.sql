@@ -1,0 +1,1 @@
+delete from dbo.MsoRajzlista where MsoId > 2497

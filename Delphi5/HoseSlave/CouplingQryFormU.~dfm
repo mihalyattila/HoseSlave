@@ -1,0 +1,719 @@
+object CouplingQryForm: TCouplingQryForm
+  Left = 319
+  Top = 281
+  Width = 961
+  Height = 396
+  BorderStyle = bsSizeToolWin
+  Caption = 'HM csatlakozók'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 333
+    Width = 953
+    Height = 29
+    Align = alBottom
+    BevelInner = bvLowered
+    BevelOuter = bvLowered
+    TabOrder = 0
+    OnResize = Panel1Resize
+    object SpeedButton1: TSpeedButton
+      Left = 4
+      Top = 4
+      Width = 23
+      Height = 22
+      Hint = 'Adatok frissítése'
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000130B0000130B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333FFFFF3333333333999993333333333F77777FFF333333999999999
+        3333333777333777FF33339993707399933333773337F3777FF3399933000339
+        9933377333777F3377F3399333707333993337733337333337FF993333333333
+        399377F33333F333377F993333303333399377F33337FF333373993333707333
+        333377F333777F333333993333101333333377F333777F3FFFFF993333000399
+        999377FF33777F77777F3993330003399993373FF3777F37777F399933000333
+        99933773FF777F3F777F339993707399999333773F373F77777F333999999999
+        3393333777333777337333333999993333333333377777333333}
+      NumGlyphs = 2
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = SpeedButton1Click
+    end
+    object BitBtn1: TBitBtn
+      Left = 327
+      Top = 2
+      Width = 75
+      Height = 25
+      TabOrder = 0
+      Kind = bkOK
+    end
+    object BitBtn2: TBitBtn
+      Left = 551
+      Top = 2
+      Width = 75
+      Height = 25
+      Caption = 'Mégsem'
+      TabOrder = 1
+      Kind = bkCancel
+    end
+  end
+  object CouplingQryGrid: TdxDBGrid
+    Left = 0
+    Top = 0
+    Width = 953
+    Height = 333
+    Bands = <
+      item
+      end>
+    DefaultLayout = True
+    HeaderPanelRowCount = 1
+    KeyField = 'COLUMN1'
+    SummaryGroups = <>
+    SummarySeparator = ', '
+    Align = alClient
+    PopupMenu = CouplingQryGridMenu
+    TabOrder = 1
+    DataSource = Dm.CouplingQryDs
+    Filter.Active = True
+    Filter.AutoDataSetFilter = True
+    Filter.Criteria = {00000000}
+    IniFileName = 'D:\ContiProgs\HoseSlave\HoseSlave.ini'
+    IniSectionName = 'CouplingQryForm'
+    OptionsBehavior = [edgoAutoSearch, edgoAutoSort, edgoDragScroll, edgoEditing, edgoEnterShowEditor, edgoImmediateEditor, edgoStoreToIniFile, edgoTabs, edgoTabThrough, edgoVertThrough]
+    OptionsDB = [edgoCancelOnExit, edgoCanDelete, edgoCanInsert, edgoCanNavigation, edgoConfirmDelete, edgoLoadAllRecords, edgoUseBookmarks]
+    OptionsView = [edgoBandHeaderWidth, edgoIndicator, edgoUseBitmap]
+    object CouplingQryGridCOLUMN1: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'COLUMN1'
+    end
+    object CouplingQryGridcouplingCounter: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'couplingCounter'
+    end
+    object CouplingQryGridcouplingANb: TdxDBGridColumn
+      Caption = 'Cikkszám'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'couplingANb'
+    end
+    object CouplingQryGridcouplingDNb: TdxDBGridColumn
+      Caption = 'Rajzszám'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'couplingDNb'
+    end
+    object CouplingQryGridcouplingFileH: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'couplingFileH'
+    end
+    object CouplingQryGridcouplingFileE: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'couplingFileE'
+    end
+    object CouplingQryGridcouplingType: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'couplingType'
+    end
+    object CouplingQryGridendFittingType: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'endFittingType'
+    end
+    object CouplingQryGridendFittingName: TdxDBGridColumn
+      Caption = 'Végzõdés neve'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'endFittingName'
+    end
+    object CouplingQryGridendFittingDesc0: TdxDBGridColumn
+      Caption = 'Végzõdés leírás 1'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'endFittingDesc0'
+    end
+    object CouplingQryGridendFittingDesc1: TdxDBGridColumn
+      Caption = 'Végzõdés leírás 2'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'endFittingDesc1'
+    end
+    object CouplingQryGridendFittingDesc2: TdxDBGridColumn
+      Caption = 'Végzõdés leírás 3'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'endFittingDesc2'
+    end
+    object CouplingQryGriddescription: TdxDBGridColumn
+      Caption = 'Leírás'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'description'
+    end
+    object CouplingQryGriddescriptionH: TdxDBGridColumn
+      Caption = 'Leírás (H)'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'descriptionH'
+    end
+    object CouplingQryGriddescriptionE: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'descriptionE'
+    end
+    object CouplingQryGriddate: TdxDBGridColumn
+      Caption = 'Dátum'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'date'
+    end
+    object CouplingQryGridweight: TdxDBGridColumn
+      Caption = 'Tömeg'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'weight'
+    end
+    object CouplingQryGridpriceSAP: TdxDBGridColumn
+      Caption = 'SAP ár'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'priceSAP'
+    end
+    object CouplingQryGridprice: TdxDBGridColumn
+      Caption = 'HoseMaster ár'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'price'
+    end
+    object CouplingQryGriddatePrice: TdxDBGridColumn
+      Caption = 'Ár dátuma'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'datePrice'
+    end
+    object CouplingQryGridsteel: TdxDBGridColumn
+      Caption = 'Anyag'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'steel'
+    end
+    object CouplingQryGridSteelDescription: TdxDBGridColumn
+      Caption = 'Anyag leírás'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'SteelDescription'
+    end
+    object CouplingQryGridfireResistant: TdxDBGridCheckColumn
+      Caption = 'Lángálló'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Width = 100
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'fireResistant'
+      ValueChecked = 'True'
+      ValueUnchecked = 'False'
+    end
+    object CouplingQryGridwelded: TdxDBGridCheckColumn
+      Caption = 'Hegesztett'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Width = 100
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'welded'
+      ValueChecked = 'True'
+      ValueUnchecked = 'False'
+    end
+    object CouplingQryGridbody: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'body'
+    end
+    object CouplingQryGridIDrated: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'IDrated'
+    end
+    object CouplingQryGridIDratedU: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'IDratedU'
+    end
+    object CouplingQryGridIdUnit: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'IdUnit'
+    end
+    object CouplingQryGriddp: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'dp'
+    end
+    object CouplingQryGridtp: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'tp'
+    end
+    object CouplingQryGridpressureU: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'pressureU'
+    end
+    object CouplingQryGridPressureUnit: TdxDBGridColumn
+      Caption = 'PressUnit'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'PressureUnit'
+    end
+    object CouplingQryGride1ID: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'e1ID'
+    end
+    object CouplingQryGride1OD: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'e1OD'
+    end
+    object CouplingQryGride1L: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'e1L'
+    end
+    object CouplingQryGridewnID: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'ewnID'
+    end
+    object CouplingQryGridewnOD: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'ewnOD'
+    end
+    object CouplingQryGride2ID: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'e2ID'
+    end
+    object CouplingQryGride2OD: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'e2OD'
+    end
+    object CouplingQryGride2L: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'e2L'
+    end
+    object CouplingQryGridLt: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'Lt'
+    end
+    object CouplingQryGridd0: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'd0'
+    end
+    object CouplingQryGridkd1: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'kd1'
+    end
+    object CouplingQryGridkd2: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'kd2'
+    end
+    object CouplingQryGridkd3: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'kd3'
+    end
+    object CouplingQryGridkd4: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'kd4'
+    end
+    object CouplingQryGridkd5: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'kd5'
+    end
+    object CouplingQryGridND1: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'ND1'
+    end
+    object CouplingQryGridND2: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'ND2'
+    end
+    object CouplingQryGridND3: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'ND3'
+    end
+    object CouplingQryGridND4: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'ND4'
+    end
+    object CouplingQryGridLB: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'LB'
+    end
+    object CouplingQryGridLH: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'LH'
+    end
+    object CouplingQryGridLF: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'LF'
+    end
+    object CouplingQryGridL1: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L1'
+    end
+    object CouplingQryGridL2: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L2'
+    end
+    object CouplingQryGridL3: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L3'
+    end
+    object CouplingQryGridL4: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L4'
+    end
+    object CouplingQryGridL5: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L5'
+    end
+    object CouplingQryGridL6: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L6'
+    end
+    object CouplingQryGridL7: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L7'
+    end
+    object CouplingQryGridL8: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L8'
+    end
+    object CouplingQryGridL9: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L9'
+    end
+    object CouplingQryGridL10: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L10'
+    end
+    object CouplingQryGridL11: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L11'
+    end
+    object CouplingQryGridL12: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L12'
+    end
+    object CouplingQryGridL13: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L13'
+    end
+    object CouplingQryGridL14: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L14'
+    end
+    object CouplingQryGridL15: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L15'
+    end
+    object CouplingQryGridL16: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'L16'
+    end
+    object CouplingQryGridM1: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'M1'
+    end
+    object CouplingQryGridalfa1: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'alfa1'
+    end
+    object CouplingQryGridalfa2: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'alfa2'
+    end
+    object CouplingQryGridalfa3: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'alfa3'
+    end
+    object CouplingQryGridstatus: TdxDBGridColumn
+      Caption = 'Státusz'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'status'
+    end
+    object CouplingQryGridnote: TdxDBGridColumn
+      Caption = 'Megjegyzés'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'note'
+    end
+    object CouplingQryGridHMuser: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'HMuser'
+    end
+    object CouplingQryGridEndFittingShortNameH: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'EndFittingShortNameH'
+    end
+    object CouplingQryGridEndFittingNameE: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'EndFittingNameE'
+    end
+    object CouplingQryGridEndFittingNameH: TdxDBGridColumn
+      Caption = 'Vézõdés neve (H)'
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'EndFittingNameH'
+    end
+    object CouplingQryGridEndFittingShortNameE: TdxDBGridColumn
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'EndFittingShortNameE'
+    end
+  end
+  object FormPlacement1: TFormPlacement
+    IniFileName = 'D:\ContiProgs\HoseSlave\HoseSlave.ini'
+    IniSection = 'CouplingQryForm'
+    Left = 80
+    Top = 64
+  end
+  object CouplingQryGridMenu: TPopupMenu
+    Left = 120
+    Top = 64
+    object Oszlopokigaztsa1: TMenuItem
+      Caption = 'Oszlopok igazítása'
+      ShortCut = 16457
+      OnClick = Oszlopokigaztsa1Click
+    end
+  end
+end

@@ -1,0 +1,277 @@
+
+[InstallShield Wizard]
+iDate=2
+iTime=1
+Flag=0
+ISX.EXE Size=679936
+ISX.EXE Date=11:21:52  1999.4.8
+ISX.EXE Ver=2.1.2.62
+SETUP.EXE Size=45312
+SETUP.EXE Date=9:12:24  1999.3.23
+SETUP.EXE Ver=3.0.111.0
+SETUP.INS Size=81342
+SETUP.INS Date=11:26:40  1999.4.8
+SETUP.INS Ver=Not available
+_INST16.EX_ Size=81342
+_INST16.EX_ Date=11:26:40  1999.4.8
+_INST16.EX_ Ver=Not available
+_INST32I.EX_ Size=294079
+_INST32I.EX_ Date=9:12:22  1999.3.23
+_INST32I.EX_ Ver=Not available
+ISDEPEND.INI Size=6857
+ISDEPEND.INI Date=10:13:00  1999.7.23
+ISDEPEND.INI Ver=Not available
+SWDEPEND.INI Size=9717
+SWDEPEND.INI Date=10:18:30  1999.7.23
+SWDEPEND.INI Ver=Not available
+ICOMP.EXE Size=119808
+ICOMP.EXE Date=9:12:24  1999.3.23
+ICOMP.EXE Ver=3.00.062
+SPLIT.EXE Size=90624
+SPLIT.EXE Date=9:12:24  1999.3.23
+SPLIT.EXE Ver=3.00.060
+PACKLIST.EXE Size=87552
+PACKLIST.EXE Date=9:12:24  1999.3.23
+PACKLIST.EXE Ver=3.00.060
+Version=2.12
+DevTool=Delphi 5
+Platform=Win32
+DisksBuilt=1
+DisksDir=HOSESL~1\650MB\
+TabsVisit=111111111000000101
+LangNum=0
+LangDir=
+
+[VisualDesign]
+AppName=HoseSlave
+AppExe=[Program Files]\HoseSlave.exe
+AppExeFile=
+Version=1.2.1.3
+Company=Phoenix Rubber Gumiipari Kft
+Title=HoseSlave
+TitleType=1
+BackgrndBmp=
+BackgrndAlign=4
+Backgrnd=1
+BackgrndColor=0
+Uninstall=1
+UninstallChecked=1
+Silent=1
+SmsMode=0
+
+[Types]
+Types=3
+Type1Components=3
+Type1Name=Custom
+Type1ComponentList=1 2 3 
+Type2Components=2
+Type2Name=Typical
+Type2ComponentList=1 3 
+Type3Components=1
+Type3Name=Compact
+Type3ComponentList=1 
+
+[Components]
+Components=3
+Component1Groups=1
+Component1Name=Application Files
+Component1Description=Application files needed to run the application
+Component1GroupList=1 
+Component2Groups=2
+Component2Name=BDE
+Component2Description=BDE
+Component2GroupList=2 3 
+Component3Groups=1
+Component3Name=System
+Component3Description=System
+Component3GroupList=4 
+
+[Groups]
+Groups=4
+Group1Size=4174391
+Group1Files=3
+Group1Name=Program Files
+Group1Dir=<INSTALLDIR>
+Group1Update=2
+Group1TargetOS=-1
+Group1File1=D:\MyDevelop\Projects\HoseSlave\Executables\Frissites.exe
+Group1File2=D:\MyDevelop\Projects\HoseSlave\Executables\HoseSlave.exe
+Group1File3=D:\MyDevelop\Projects\HoseSlave\Executables\PrgUpdater.ini
+Group2Size=7145114
+Group2Files=25
+Group2Auto=101
+Group2ID=38701
+Group2Name=BDE/IDAPI Files
+Group2Dir=<ProgramFilesDir>\Common Files\Borland Shared\BDE
+Group2Update=-1
+Group2TargetOS=-1
+Group2File1=C:\Program Files\Borland\Common Files\BDE\IDAPI32.DLL
+Group2File1Auto=101
+Group2File2=C:\Program Files\Borland\Common Files\BDE\IDR20009.DLL
+Group2File2Auto=101
+Group2File3=C:\Program Files\Borland\Common Files\BDE\BLW32.DLL
+Group2File3Auto=101
+Group2File4=C:\Program Files\Borland\Common Files\BDE\BDEADMIN.EXE
+Group2File4Auto=101
+Group2File5=C:\Program Files\Borland\Common Files\BDE\BDEADMIN.HLP
+Group2File5Auto=101
+Group2File6=C:\Program Files\Borland\Common Files\BDE\BDEADMIN.CNT
+Group2File6Auto=101
+Group2File7=C:\Program Files\Borland\Common Files\BDE\BDEADMIN.TOC
+Group2File7Auto=101
+Group2File8=C:\Program Files\Borland\Common Files\BDE\IDDR32.DLL
+Group2File8Auto=101
+Group2File9=C:\Program Files\Borland\Common Files\BDE\IDPDX32.DLL
+Group2File9Auto=101
+Group2File10=C:\Program Files\Borland\Common Files\BDE\IDSQL32.DLL
+Group2File10Auto=101
+Group2File11=C:\Program Files\Borland\Common Files\BDE\IDBAT32.DLL
+Group2File11Auto=101
+Group2File12=C:\Program Files\Borland\Common Files\BDE\IDQBE32.DLL
+Group2File12Auto=101
+Group2File13=C:\Program Files\Borland\Common Files\BDE\IDDBAS32.DLL
+Group2File13Auto=101
+Group2File14=C:\Program Files\Borland\Common Files\BDE\IDASCI32.DLL
+Group2File14Auto=101
+Group2File15=C:\Program Files\Borland\Common Files\BDE\IDODBC32.DLL
+Group2File15Auto=101
+Group2File16=C:\Program Files\Borland\Common Files\BDE\IDDA3532.DLL
+Group2File16Auto=101
+Group2File17=C:\Program Files\InstallShield\Express for Delphi 5\redist\IDAPINST.DLL
+Group2File17Auto=101
+Group2File18=C:\Program Files\Borland\Common Files\BDE\BANTAM.DLL
+Group2File18Auto=101
+Group2File19=C:\Program Files\Borland\Common Files\BDE\USA.BTL
+Group2File19Auto=101
+Group2File20=C:\Program Files\Borland\Common Files\BDE\EUROPE.BTL
+Group2File20Auto=101
+Group2File21=C:\Program Files\Borland\Common Files\BDE\CEEUROPE.BTL
+Group2File21Auto=101
+Group2File22=C:\Program Files\Borland\Common Files\BDE\JAPAN.BTL
+Group2File22Auto=101
+Group2File23=C:\Program Files\Borland\Common Files\BDE\OTHER.BTL
+Group2File23Auto=101
+Group2File24=C:\Program Files\Borland\Common Files\BDE\FAREAST.BTL
+Group2File24Auto=101
+Group2File25=C:\Program Files\Borland\Common Files\BDE\CHARSET.CVB
+Group2File25Auto=101
+Group3Size=6080
+Group3Files=1
+Group3Auto=98
+Group3ID=38698
+Group3Name=BDE/IDAPI CNF File
+Group3Dir=<ProgramFilesDir>\Common Files\Borland Shared\BDE
+Group3Update=-1
+Group3TargetOS=-1
+Group3File1=C:\Program Files\InstallShield\Express for Delphi 5\redist\IDAPI.CNF
+Group3File1Auto=98
+Group4Size=1041920
+Group4Files=3
+Group4Auto=58
+Group4ID=38658
+Group4Name=System Files - WinSysDir
+Group4Dir=<WINSYSDIR>
+Group4Update=-1
+Group4TargetOS=-1
+Group4File1=C:\WINDOWS\system32\BDEADMIN.CPL
+Group4File1Auto=58
+Group4File2=C:\WINDOWS\system32\VCLBDE50.BPL
+Group4File2Auto=58
+Group4File3=C:\WINDOWS\system32\VCLDB50.BPL
+Group4File3Auto=58
+
+[Sequence]
+DestinationLocationDir=d:\ContiProgs\HoseSlave
+DatabaseLocationDir=<INSTALLDIR>\data
+SelectProgramFolderName=HoseSlave
+WelcomeMessage=1
+WelcomeMessageFile=
+UserInformation=1
+SetupType=1
+CustomSetup=1
+BeginFileTransfer=1
+ProgressBar=1
+SetupComplete=1
+SetupCompleteExec=[Program Files]\HoseSlave.exe
+SetupCompleteExecParam=
+SetupCompleteExecReadme=
+
+[RegEntries]
+Reg1Path=HKEY_CLASSES_ROOT
+Reg1Val1Type=0
+Reg1Val1Name=(Default)
+Reg1Val1Data=(value not set)
+Reg1Vals=1
+Reg2Path=HKEY_CURRENT_USER
+Reg2Val1Type=0
+Reg2Val1Name=(Default)
+Reg2Val1Data=(value not set)
+Reg2Vals=1
+Reg3Path=HKEY_LOCAL_MACHINE
+Reg3Val1Type=0
+Reg3Val1Name=(Default)
+Reg3Val1Data=(value not set)
+Reg3Vals=1
+Reg4Path=HKEY_USERS
+Reg4Val1Type=0
+Reg4Val1Name=(Default)
+Reg4Val1Data=(value not set)
+Reg4Vals=1
+Reg5Path=HKEY_CURRENT_CONFIG
+Reg5Val1Type=0
+Reg5Val1Name=(Default)
+Reg5Val1Data=(value not set)
+Reg5Vals=1
+Reg6Path=HKEY_DYN_DATA
+Reg6Val1Type=0
+Reg6Val1Name=(Default)
+Reg6Val1Data=(value not set)
+Reg6Vals=1
+Regs=6
+
+[Registry]
+
+[Icons]
+Icons=2
+Icon1Param=
+Icon1Cmd=[Program Files]\HoseSlave.exe
+Icon1Description=HoseSlave
+Icon1WorkingDir=[Program Files]
+Icon1IconFile=
+Icon1RealFile=D:\MyDevelop\Delphi5\Tko\Executables\HoseSlave.exe
+Icon1WhichIcon=0
+Icon1KeyVirtual=0
+Icon1KeyFlags=0
+Icon1StartMenu=0
+Icon1Window=0
+Icon2Param=
+Icon2Cmd=[Program Files]\Frissites.exe
+Icon2Description=Frissites
+Icon2WorkingDir=[Program Files]
+Icon2IconFile=
+Icon2RealFile=D:\MyDevelop\Projects\HoseSlave\Executables\Frissites.exe
+Icon2WhichIcon=0
+Icon2KeyVirtual=0
+Icon2KeyFlags=0
+Icon2StartMenu=0
+Icon2Window=0
+
+[Autoexec]
+PathDir=
+ShareLocks=
+ShareFiles=
+Command=
+
+[CopyToFloppy]
+DriveOption=
+DestinationPath=
+DestinationPathOneFile=
+Password=
+
+[ISObjectIDs]
+nTotal=2
+ID1=101
+ID2=58
+
+[Uninstall]
+UserUninstall=0

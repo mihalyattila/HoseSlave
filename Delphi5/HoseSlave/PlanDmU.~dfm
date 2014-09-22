@@ -1,0 +1,617 @@
+object PlanDm: TPlanDm
+  OldCreateOrder = False
+  Left = 348
+  Top = 397
+  Height = 585
+  Width = 870
+  object dsRendelesProgram: TDataSource
+    DataSet = qRendelesProgram
+    Left = 112
+    Top = 112
+  end
+  object spGetProgramBase: TStoredProc
+    DatabaseName = 'MainDb'
+    StoredProcName = 'sp_GetProgramBase;1'
+    Left = 48
+    Top = 24
+    ParamData = <
+      item
+        DataType = ftInteger
+        Name = '@RETURN_VALUE'
+        ParamType = ptResult
+        Value = 0
+      end>
+    object spGetProgramBaseRendelsszm: TStringField
+      FieldName = 'Rendelésszám'
+    end
+    object spGetProgramBasePhxrendsz: TStringField
+      FieldName = 'Phx.rendsz'
+    end
+    object spGetProgramBaseVevirendsz: TStringField
+      FieldName = 'Vevõi rendsz.'
+    end
+    object spGetProgramBaseRevzi: TSmallintField
+      FieldName = 'Revízió'
+    end
+    object spGetProgramBaseVev: TStringField
+      FieldName = 'Vevõ'
+      Size = 50
+    end
+    object spGetProgramBaseFelhasznl: TStringField
+      FieldName = 'Felhasználó'
+      Size = 50
+    end
+    object spGetProgramBasePozci: TIntegerField
+      FieldName = 'Pozíció'
+    end
+    object spGetProgramBaseCikkszm: TStringField
+      FieldName = 'Cikkszám'
+    end
+    object spGetProgramBaseSpecifikci: TStringField
+      FieldName = 'Specifikáció'
+      Size = 100
+    end
+    object spGetProgramBasetmr: TFloatField
+      FieldName = 'Átmérõ'
+    end
+    object spGetProgramBasepsi: TFloatField
+      FieldName = 'psi'
+    end
+    object spGetProgramBaseMPa: TFloatField
+      FieldName = 'MPa'
+    end
+    object spGetProgramBaseHossz: TFloatField
+      FieldName = 'Hossz'
+    end
+    object spGetProgramBaseMe: TStringField
+      FieldName = 'Me'
+      Size = 10
+    end
+    object spGetProgramBaseDB: TFloatField
+      FieldName = 'DB'
+    end
+    object spGetProgramBaseHatrid: TDateTimeField
+      FieldName = 'Határidõ'
+    end
+    object spGetProgramBaseKonstrukci: TStringField
+      FieldName = 'Konstrukció'
+      Size = 50
+    end
+    object spGetProgramBaseLlek: TStringField
+      FieldName = 'Lélek'
+      Size = 50
+    end
+    object spGetProgramBaseSodrony: TStringField
+      FieldName = 'Sodrony'
+      Size = 50
+    end
+    object spGetProgramBaseLngll: TBooleanField
+      FieldName = 'Lángálló'
+    end
+    object spGetProgramBaseBelsggecs: TBooleanField
+      FieldName = 'Belsõgégecsõ'
+    end
+    object spGetProgramBaseKlsggecs: TBooleanField
+      FieldName = 'Külsõgégecsõ'
+    end
+    object spGetProgramBaseInterlock: TBooleanField
+      FieldName = 'Interlock'
+    end
+    object spGetProgramBasePoliamid: TBooleanField
+      FieldName = 'Poliamid'
+    end
+    object spGetProgramBaseKlsvdelem: TBooleanField
+      FieldName = 'Külsõvédelem'
+    end
+    object spGetProgramBaseOsszetettKulcs: TStringField
+      FieldName = 'OsszetettKulcs'
+      Size = 27
+    end
+    object spGetProgramBaseId: TStringField
+      FieldName = 'Id'
+      Size = 255
+    end
+  end
+  object dsGetProgramBase: TDataSource
+    DataSet = mProgramBase
+    Left = 112
+    Top = 40
+  end
+  object mProgramBase: TRxMemoryData
+    FieldDefs = <>
+    Left = 176
+    Top = 24
+    object mProgramBaseRendelsszm: TStringField
+      FieldName = 'Rendelésszám'
+    end
+    object mProgramBasePhxrendsz: TStringField
+      FieldName = 'Phx.rendsz'
+    end
+    object mProgramBaseVevirendsz: TStringField
+      FieldName = 'Vevõi rendsz.'
+    end
+    object mProgramBaseRevzi: TSmallintField
+      FieldName = 'Revízió'
+    end
+    object mProgramBaseVev: TStringField
+      FieldName = 'Vevõ'
+      Size = 50
+    end
+    object mProgramBaseFelhasznl: TStringField
+      FieldName = 'Felhasználó'
+      Size = 50
+    end
+    object mProgramBasePozci: TIntegerField
+      FieldName = 'Pozíció'
+    end
+    object mProgramBaseCikkszm: TStringField
+      FieldName = 'Cikkszám'
+    end
+    object mProgramBaseSpecifikci: TStringField
+      FieldName = 'Specifikáció'
+      Size = 100
+    end
+    object mProgramBasetmr: TFloatField
+      FieldName = 'Átmérõ'
+    end
+    object mProgramBasepsi: TFloatField
+      FieldName = 'psi'
+    end
+    object mProgramBaseMPa: TFloatField
+      FieldName = 'MPa'
+    end
+    object mProgramBaseHossz: TFloatField
+      FieldName = 'Hossz'
+    end
+    object mProgramBaseMe: TStringField
+      FieldName = 'Me'
+      Size = 10
+    end
+    object mProgramBaseDB: TFloatField
+      FieldName = 'DB'
+    end
+    object mProgramBaseHatrid: TDateTimeField
+      FieldName = 'Határidõ'
+    end
+    object mProgramBaseKonstrukci: TStringField
+      FieldName = 'Konstrukció'
+      Size = 50
+    end
+    object mProgramBaseLlek: TStringField
+      FieldName = 'Lélek'
+      Size = 50
+    end
+    object mProgramBaseSodrony: TStringField
+      FieldName = 'Sodrony'
+      Size = 50
+    end
+    object mProgramBaseLngll: TBooleanField
+      FieldName = 'Lángálló'
+    end
+    object mProgramBaseBelsggecs: TBooleanField
+      FieldName = 'Belsõgégecsõ'
+    end
+    object mProgramBaseKlsggecs: TBooleanField
+      FieldName = 'Külsõgégecsõ'
+    end
+    object mProgramBaseInterlock: TBooleanField
+      FieldName = 'Interlock'
+    end
+    object mProgramBasePoliamid: TBooleanField
+      FieldName = 'Poliamid'
+    end
+    object mProgramBaseKlsvdelem: TBooleanField
+      FieldName = 'Külsõvédelem'
+    end
+    object mProgramBaseOsszetettKulcs: TStringField
+      FieldName = 'OsszetettKulcs'
+      Size = 27
+    end
+    object mProgramBaseId: TStringField
+      FieldName = 'Id'
+      Size = 255
+    end
+  end
+  object dsHonapok: TDataSource
+    DataSet = qHonapok
+    Left = 112
+    Top = 160
+  end
+  object qHonapok: TQuery
+    DatabaseName = 'MainDb'
+    SQL.Strings = (
+      'select * from Honapok')
+    Left = 48
+    Top = 144
+    object qHonapokHonapKod: TIntegerField
+      FieldName = 'HonapKod'
+      Origin = 'MAINDB.Honapok.HonapKod'
+    end
+    object qHonapokHonapHNev: TStringField
+      FieldName = 'HonapHNev'
+      Origin = 'MAINDB.Honapok.HonapHNev'
+      Size = 50
+    end
+    object qHonapokHonapENev: TStringField
+      FieldName = 'HonapENev'
+      Origin = 'MAINDB.Honapok.HonapENev'
+      Size = 50
+    end
+  end
+  object qGyartoHelyek: TQuery
+    DatabaseName = 'MainDb'
+    SQL.Strings = (
+      'select * from GyartoHelyek where Aktiv = 1'
+      'order by Helykod')
+    Left = 48
+    Top = 192
+    object qGyartoHelyekHelyKod: TIntegerField
+      FieldName = 'HelyKod'
+      Origin = 'MAINDB.GyartoHelyek.HelyKod'
+    end
+    object qGyartoHelyekHelyNev: TStringField
+      FieldName = 'HelyNev'
+      Origin = 'MAINDB.GyartoHelyek.HelyNev'
+      Size = 50
+    end
+    object qGyartoHelyekAktiv: TBooleanField
+      FieldName = 'Aktiv'
+      Origin = 'MAINDB.GyartoHelyek.Aktiv'
+    end
+  end
+  object dsGyartoHelyek: TDataSource
+    DataSet = qGyartoHelyek
+    Left = 112
+    Top = 208
+  end
+  object qLelekAnyag: TQuery
+    DatabaseName = 'MainDb'
+    SQL.Strings = (
+      'select * from Lelekanyagok order by [Anyagnév]')
+    Left = 48
+    Top = 240
+    object qLelekAnyagAnyagkd: TSmallintField
+      FieldName = 'Anyagkód'
+    end
+    object qLelekAnyagAnyagnv: TStringField
+      FieldName = 'Anyagnév'
+      Size = 50
+    end
+    object qLelekAnyagRgztette: TStringField
+      FieldName = 'Rögzítette'
+      Size = 50
+    end
+    object qLelekAnyagRgzipont: TDateTimeField
+      FieldName = 'Rögz.iõpont'
+    end
+  end
+  object qSodronyTipus: TQuery
+    DatabaseName = 'MainDb'
+    SQL.Strings = (
+      'select * from SodronyTipusok order by [Sodronynév]')
+    Left = 48
+    Top = 288
+    object qSodronyTipusSodronykd: TSmallintField
+      FieldName = 'Sodronykód'
+    end
+    object qSodronyTipusSodronynv: TStringField
+      FieldName = 'Sodronynév'
+      Size = 50
+    end
+    object qSodronyTipusRgztette: TStringField
+      FieldName = 'Rögzítette'
+      Size = 50
+    end
+    object qSodronyTipusRgzidpont: TDateTimeField
+      FieldName = 'Rögz.idõpont'
+    end
+  end
+  object qStatusz: TQuery
+    DatabaseName = 'MainDb'
+    SQL.Strings = (
+      'select * from RekordStatusz where StatuszKod in (0,1)')
+    Left = 48
+    Top = 336
+    object qStatuszStatuszKod: TSmallintField
+      FieldName = 'StatuszKod'
+    end
+    object qStatuszStatuszNev: TStringField
+      FieldName = 'StatuszNev'
+      FixedChar = True
+    end
+    object qStatuszColor: TStringField
+      FieldName = 'Color'
+      Size = 50
+    end
+  end
+  object mRecount: TRxMemoryData
+    FieldDefs = <>
+    Left = 48
+    Top = 384
+    object mRecountOldCount: TIntegerField
+      FieldName = 'OldCount'
+    end
+    object mRecountNewCount: TIntegerField
+      FieldName = 'NewCount'
+    end
+  end
+  object qRendelesProgram: TQuery
+    CachedUpdates = True
+    AfterOpen = qRendelesProgramAfterOpen
+    BeforePost = qRendelesProgramBeforePost
+    AfterPost = qRendelesProgramAfterPost
+    AfterDelete = qRendelesProgramAfterDelete
+    OnCalcFields = qRendelesProgramCalcFields
+    OnNewRecord = qRendelesProgramNewRecord
+    DatabaseName = 'MainDb'
+    SQL.Strings = (
+      'select *'
+      'from RendelesProgram'
+      'order by Id')
+    UpdateObject = uRendelesProgram
+    Left = 48
+    Top = 96
+    object qRendelesProgramRendelsszm: TStringField
+      FieldName = 'Rendelésszám'
+      Origin = 'MAINDB.RendelesProgram.Rendelésszám'
+    end
+    object qRendelesProgramPozci: TIntegerField
+      FieldName = 'Pozíció'
+      Origin = 'MAINDB.RendelesProgram.Pozíció'
+    end
+    object qRendelesProgramRevzi: TIntegerField
+      FieldName = 'Revízió'
+      Origin = 'MAINDB.RendelesProgram.Revízió'
+    end
+    object qRendelesProgramMegrendel: TStringField
+      FieldName = 'Megrendelõ'
+      Origin = 'MAINDB.RendelesProgram.Megrendelõ'
+      Size = 50
+    end
+    object qRendelesProgramFelhasznl: TStringField
+      FieldName = 'Felhasználó'
+      Origin = 'MAINDB.RendelesProgram.Felhasználó'
+      Size = 50
+    end
+    object qRendelesProgramSpecifikci: TStringField
+      FieldName = 'Specifikáció'
+      Origin = 'MAINDB.RendelesProgram.Specifikáció'
+      Size = 100
+    end
+    object qRendelesProgramCikkszm: TStringField
+      FieldName = 'Cikkszám'
+      Origin = 'MAINDB.RendelesProgram.Cikkszám'
+    end
+    object qRendelesProgramdb: TIntegerField
+      FieldName = 'db'
+      Origin = 'MAINDB.RendelesProgram.db'
+    end
+    object qRendelesProgramHossz: TFloatField
+      FieldName = 'Hossz'
+      Origin = 'MAINDB.RendelesProgram.Hossz'
+    end
+    object qRendelesProgramLlekanyagkd: TSmallintField
+      FieldName = 'Lélekanyagkód'
+      Origin = 'MAINDB.RendelesProgram.Lélekanyagkód'
+    end
+    object qRendelesProgramSodronytipuskd: TSmallintField
+      FieldName = 'Sodronytipuskód'
+      Origin = 'MAINDB.RendelesProgram.Sodronytipuskód'
+    end
+    object qRendelesProgramSodrmennyisg: TFloatField
+      FieldName = 'SodrMennyiség'
+      Origin = 'MAINDB.RendelesProgram."Sodr.mennyiség"'
+    end
+    object qRendelesProgramNormaid: TFloatField
+      FieldName = 'Normaidõ'
+      Origin = 'MAINDB.RendelesProgram.Normaidõ'
+    end
+    object qRendelesProgramSttusz: TSmallintField
+      FieldName = 'Státusz'
+      Origin = 'MAINDB.RendelesProgram.Státusz'
+    end
+    object qRendelesProgramHatrid: TDateTimeField
+      FieldName = 'Határidõ'
+      Origin = 'MAINDB.RendelesProgram.Határidõ'
+    end
+    object qRendelesProgramRgztette: TStringField
+      FieldName = 'Rögzítette'
+      Origin = 'MAINDB.RendelesProgram.Rögzítette'
+      Size = 50
+    end
+    object qRendelesProgramRgzidpont: TDateTimeField
+      FieldName = 'RögzIdõpont'
+      Origin = 'MAINDB.RendelesProgram."Rögz.idõpont"'
+    end
+    object qRendelesProgramProgv: TIntegerField
+      FieldName = 'ProgÉv'
+      Origin = 'MAINDB.RendelesProgram."Prog.év"'
+    end
+    object qRendelesProgramProghnap: TSmallintField
+      FieldName = 'ProgHónap'
+      Origin = 'MAINDB.RendelesProgram."Prog.hónap"'
+    end
+    object qRendelesProgramMegjegyzs: TStringField
+      FieldName = 'Megjegyzés'
+      Origin = 'MAINDB.RendelesProgram.Megjegyzés'
+      Size = 200
+    end
+    object qRendelesProgramGyrtsi_terletkd: TSmallintField
+      FieldName = 'Gyártási_területkód'
+      Origin = 'MAINDB.RendelesProgram.Gyártási_területkód'
+    end
+    object qRendelesProgramsszhossz: TFloatField
+      FieldKind = fkCalculated
+      FieldName = 'Össz hossz'
+      Calculated = True
+    end
+    object qRendelesProgramLlekanyag: TStringField
+      FieldKind = fkLookup
+      FieldName = 'Lélekanyag'
+      LookupDataSet = qLelekAnyag
+      LookupKeyFields = 'Anyagkód'
+      LookupResultField = 'Anyagnév'
+      KeyFields = 'Lélekanyagkód'
+      Size = 50
+      Lookup = True
+    end
+    object qRendelesProgramSodronytipus: TStringField
+      FieldKind = fkLookup
+      FieldName = 'Sodronytipus'
+      LookupDataSet = qSodronyTipus
+      LookupKeyFields = 'Sodronykód'
+      LookupResultField = 'Sodronynév'
+      KeyFields = 'Sodronytipuskód'
+      Size = 50
+      Lookup = True
+    end
+    object qRendelesProgramKiadott_tvteli: TBooleanField
+      FieldName = 'Kiadott_átvételi'
+      Origin = 'MAINDB.RendelesProgram.Kiadott_átvételi'
+    end
+    object qRendelesProgramId: TIntegerField
+      FieldName = 'Id'
+      Origin = 'MAINDB.RendelesProgram.Id'
+    end
+    object qRendelesProgramllapot: TStringField
+      FieldKind = fkLookup
+      FieldName = 'Állapot'
+      LookupDataSet = qStatusz
+      LookupKeyFields = 'StatuszKod'
+      LookupResultField = 'StatuszNev'
+      KeyFields = 'Státusz'
+      Lookup = True
+    end
+    object qRendelesProgramGyrthely: TStringField
+      FieldKind = fkLookup
+      FieldName = 'Gyártóhely'
+      LookupDataSet = qGyartoHelyek
+      LookupKeyFields = 'HelyKod'
+      LookupResultField = 'HelyNev'
+      KeyFields = 'Gyártási_területkód'
+      Size = 50
+      Lookup = True
+    end
+    object qRendelesProgramrtk: TFloatField
+      FieldName = 'Érték'
+      Origin = 'MAINDB.RendelesProgram.Érték'
+    end
+    object qRendelesProgramLngll: TBooleanField
+      FieldName = 'Lángálló'
+      Origin = 'MAINDB.RendelesProgram.Lángálló'
+    end
+    object qRendelesProgramBelsggecs: TBooleanField
+      FieldName = 'Belsõgégecsõ'
+      Origin = 'MAINDB.RendelesProgram.Belsõgégecsõ'
+    end
+    object qRendelesProgramKlsggecs: TBooleanField
+      FieldName = 'Külsõgégecsõ'
+      Origin = 'MAINDB.RendelesProgram.Külsõgégecsõ'
+    end
+    object qRendelesProgramInterlock: TBooleanField
+      FieldName = 'Interlock'
+      Origin = 'MAINDB.RendelesProgram.Interlock'
+    end
+    object qRendelesProgramPoliamid: TBooleanField
+      FieldName = 'Poliamid'
+      Origin = 'MAINDB.RendelesProgram.Poliamid'
+    end
+    object qRendelesProgramKlsvdelem: TBooleanField
+      FieldName = 'Külsõvédelem'
+      Origin = 'MAINDB.RendelesProgram.Külsõvédelem'
+    end
+    object qRendelesProgramInspektor: TStringField
+      FieldName = 'Inspektor'
+      Origin = 'MAINDB.RendelesProgram.Inspektor'
+      Size = 50
+    end
+    object qRendelesProgramFests: TStringField
+      FieldName = 'Festés'
+      Origin = 'MAINDB.RendelesProgram.Festés'
+      Size = 50
+    end
+    object qRendelesProgramSorrend: TIntegerField
+      FieldName = 'Sorrend'
+      Origin = 'MAINDB.RendelesProgram.Sorrend'
+    end
+  end
+  object uRendelesProgram: TUpdateSQL
+    ModifySQL.Strings = (
+      'update RendelesProgram'
+      'set'
+      '  Rendelésszám = :Rendelésszám,'
+      '  Pozíció = :Pozíció,'
+      '  Revízió = :Revízió,'
+      '  Megrendelõ = :Megrendelõ,'
+      '  Felhasználó = :Felhasználó,'
+      '  Gyártási_területkód = :Gyártási_területkód,'
+      '  Specifikáció = :Specifikáció,'
+      '  Cikkszám = :Cikkszám,'
+      '  db = :db,'
+      '  Hossz = :Hossz,'
+      '  Lélekanyagkód = :Lélekanyagkód,'
+      '  Sodronytipuskód = :Sodronytipuskód,'
+      '  SodrMennyiség = :SodrMennyiség,'
+      '  Normaidõ = :Normaidõ,'
+      '  Státusz = :Státusz,'
+      '  Határidõ = :Határidõ,'
+      '  Rögzítette = :Rögzítette,'
+      '  RögzIdõpont = :RögzIdõpont,'
+      '  ProgÉv = :ProgÉv,'
+      '  ProgHónap = :ProgHónap,'
+      '  Megjegyzés = :Megjegyzés,'
+      '  Kiadott_átvételi = :Kiadott_átvételi,'
+      '  Érték = :Érték,'
+      '  Lángálló = :Lángálló,'
+      '  Belsõgégecsõ = :Belsõgégecsõ,'
+      '  Külsõgégecsõ = :Külsõgégecsõ,'
+      '  Interlock = :Interlock,'
+      '  Poliamid = :Poliamid,'
+      '  Külsõvédelem = :Külsõvédelem,'
+      '  Inspektor = :Inspektor,'
+      '  Festés = :Festés,'
+      '  Sorrend = :Sorrend'
+      'where'
+      '  Id = :OLD_Id')
+    InsertSQL.Strings = (
+      'insert into RendelesProgram'
+      
+        '  (Rendelésszám, Pozíció, Revízió, Megrendelõ, Felhasználó, Gyár' +
+        'tási_területkód, '
+      
+        '   Specifikáció, Cikkszám, db, Hossz, Lélekanyagkód, Sodronytipu' +
+        'skód, SodrMennyiség, '
+      
+        '   Normaidõ, Státusz, Határidõ, Rögzítette, RögzIdõpont, ProgÉv,' +
+        ' ProgHónap, '
+      
+        '   Megjegyzés, Kiadott_átvételi, Érték, Lángálló, Belsõgégecsõ, ' +
+        'Külsõgégecsõ, '
+      
+        '   Interlock, Poliamid, Külsõvédelem, Inspektor, Festés, Sorrend' +
+        ')'
+      'values'
+      
+        '  (:Rendelésszám, :Pozíció, :Revízió, :Megrendelõ, :Felhasználó,' +
+        ' :Gyártási_területkód, '
+      
+        '   :Specifikáció, :Cikkszám, :db, :Hossz, :Lélekanyagkód, :Sodro' +
+        'nytipuskód, '
+      
+        '   :SodrMennyiség, :Normaidõ, :Státusz, :Határidõ, :Rögzítette, ' +
+        ':RögzIdõpont, '
+      
+        '   :ProgÉv, :ProgHónap, :Megjegyzés, :Kiadott_átvételi, :Érték, ' +
+        ':Lángálló, '
+      
+        '   :Belsõgégecsõ, :Külsõgégecsõ, :Interlock, :Poliamid, :Külsõvé' +
+        'delem, '
+      '   :Inspektor, :Festés, :Sorrend)')
+    DeleteSQL.Strings = (
+      'delete from RendelesProgram'
+      'where'
+      '  Id = :OLD_Id')
+    Left = 176
+    Top = 96
+  end
+end

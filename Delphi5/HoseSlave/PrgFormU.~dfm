@@ -1,0 +1,61 @@
+object PrgForm: TPrgForm
+  Left = 616
+  Top = 483
+  Width = 417
+  Height = 88
+  BorderIcons = [biMinimize, biMaximize]
+  BorderStyle = bsSizeToolWin
+  Caption = 'PrgForm'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ProductName: TLabel
+    Left = 8
+    Top = 32
+    Width = 105
+    Height = 16
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'HoseSlave'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    IsControl = True
+  end
+  object CreatedBy: TLabel
+    Left = 104
+    Top = 34
+    Width = 265
+    Height = 13
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Készítette: Mihály Attila /2006-.../'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    IsControl = True
+  end
+  object ProgressBar1: TProgressBar
+    Left = 8
+    Top = 8
+    Width = 385
+    Height = 17
+    Min = 0
+    Max = 100
+    Step = 1
+    TabOrder = 0
+  end
+end

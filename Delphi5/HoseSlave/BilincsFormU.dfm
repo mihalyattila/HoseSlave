@@ -1,0 +1,280 @@
+object BilincsForm: TBilincsForm
+  Left = 332
+  Top = 368
+  Width = 912
+  Height = 241
+  BorderStyle = bsSizeToolWin
+  Caption = 'BilincsForm'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 174
+    Width = 896
+    Height = 29
+    Align = alBottom
+    BevelInner = bvLowered
+    BevelOuter = bvLowered
+    TabOrder = 0
+    object DBNavigator1: TDBNavigator
+      Left = 2
+      Top = 2
+      Width = 180
+      Height = 25
+      DataSource = Dm.dsBilincs
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbEdit, nbPost, nbCancel]
+      Align = alLeft
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+    end
+    object Panel2: TPanel
+      Left = 182
+      Top = 2
+      Width = 712
+      Height = 25
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 1
+      OnResize = Panel2Resize
+      object BitBtn1: TBitBtn
+        Left = 6
+        Top = 0
+        Width = 83
+        Height = 25
+        Hint = 
+          'A tömlõ darabszámmal összefüggõ adat generálás'#13#10'(2 tétel / tömlõ' +
+          ')'
+        Caption = 'Generálás'
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 1
+        OnClick = BitBtn1Click
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000120B0000120B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF003FF0000000F0
+          000033F77777773777773FFF0CCC0FF09990333F73F37337F33733FFF0C0FFF0
+          99903333F7373337F337333FFF0FFFF0999033333F73FFF7FFF73333FFF000F0
+          0000333333F77737777733333F07B70FFFFF3333337F337F33333333330BBB0F
+          FFFF3FFFFF7F337F333300000307B70FFFFF77777F73FF733F330EEE033000FF
+          0FFF7F337FF777337FF30EEE00033FF000FF7F33777F333777FF0EEE0E033300
+          000F7FFF7F7FFF77777F00000E00000000007777737773777777330EEE0E0330
+          00FF337FFF7F7F3777F33300000E033000FF337777737F3777F333330EEE0330
+          00FF33337FFF7FF77733333300000000033F3333777777777333}
+        NumGlyphs = 2
+      end
+      object BitBtn2: TBitBtn
+        Left = 96
+        Top = 0
+        Width = 81
+        Height = 25
+        Hint = 'A megváltoztatott adatok mentése'
+        Caption = 'Mentés'
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 0
+        OnClick = BitBtn2Click
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000130B0000130B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333330070
+          7700333333337777777733333333008088003333333377F73377333333330088
+          88003333333377FFFF7733333333000000003FFFFFFF77777777000000000000
+          000077777777777777770FFFFFFF0FFFFFF07F3333337F3333370FFFFFFF0FFF
+          FFF07F3FF3FF7FFFFFF70F00F0080CCC9CC07F773773777777770FFFFFFFF039
+          99337F3FFFF3F7F777F30F0000F0F09999937F7777373777777F0FFFFFFFF999
+          99997F3FF3FFF77777770F00F000003999337F773777773777F30FFFF0FF0339
+          99337F3FF7F3733777F30F08F0F0337999337F7737F73F7777330FFFF0039999
+          93337FFFF7737777733300000033333333337777773333333333}
+        NumGlyphs = 2
+      end
+      object BitBtn3: TBitBtn
+        Left = 184
+        Top = 0
+        Width = 81
+        Height = 25
+        Hint = 'A legutóbbi mentés óta megváltoztatott adatok visszaállítása'
+        Caption = 'Visszavon'
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 2
+        OnClick = BitBtn3Click
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000130B0000130B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+          333333333333333333333333333333333333333FFF33FF333FFF339993370733
+          999333777FF37FF377733339993000399933333777F777F77733333399970799
+          93333333777F7377733333333999399933333333377737773333333333990993
+          3333333333737F73333333333331013333333333333777FF3333333333910193
+          333333333337773FF3333333399000993333333337377737FF33333399900099
+          93333333773777377FF333399930003999333337773777F777FF339993370733
+          9993337773337333777333333333333333333333333333333333333333333333
+          3333333333333333333333333333333333333333333333333333}
+        NumGlyphs = 2
+      end
+      object BitBtn4: TBitBtn
+        Left = 272
+        Top = 0
+        Width = 81
+        Height = 25
+        Caption = 'Mégse'
+        TabOrder = 3
+        Kind = bkCancel
+      end
+    end
+  end
+  object BilincsGrid: TdxDBGrid
+    Left = 0
+    Top = 0
+    Width = 896
+    Height = 174
+    Hint = 'Automatikus kitöltés - jobb klikk'
+    Bands = <
+      item
+      end>
+    DefaultLayout = True
+    HeaderPanelRowCount = 1
+    KeyField = 'Counter'
+    SummaryGroups = <>
+    SummarySeparator = ', '
+    Align = alClient
+    ParentShowHint = False
+    PopupMenu = BilincsGridPopupMenu
+    ShowHint = True
+    TabOrder = 1
+    DataSource = Dm.dsBilincs
+    Filter.Criteria = {00000000}
+    IniFileName = 'D:\ContiProgs\HoseSlave\HoseSlave.ini'
+    IniSectionName = 'BilincsGrid'
+    OptionsBehavior = [edgoAutoSort, edgoDragScroll, edgoEditing, edgoEnterShowEditor, edgoEnterThrough, edgoImmediateEditor, edgoStoreToIniFile, edgoTabThrough, edgoVertThrough]
+    OptionsDB = [edgoCanAppend, edgoCancelOnExit, edgoCanDelete, edgoCanInsert, edgoCanNavigation, edgoConfirmDelete, edgoUseBookmarks]
+    OptionsView = [edgoBandHeaderWidth, edgoIndicator, edgoUseBitmap]
+    object BilincsGridRendelesAz: TdxDBGridMaskColumn
+      HeaderAlignment = taCenter
+      TabStop = False
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'RendelesAz'
+    end
+    object BilincsGridTetelSrsz: TdxDBGridMaskColumn
+      HeaderAlignment = taCenter
+      TabStop = False
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'TetelSrsz'
+    end
+    object BilincsGridTipus: TdxDBGridMaskColumn
+      HeaderAlignment = taCenter
+      TabStop = False
+      Visible = False
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'Tipus'
+    end
+    object BilincsGridTomloSorszam: TdxDBGridMaskColumn
+      Caption = 'Tömlõ sorszám'
+      HeaderAlignment = taCenter
+      Width = 93
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'TomloSorszam'
+    end
+    object BilincsGridCounter: TdxDBGridMaskColumn
+      Caption = 'Sorszám'
+      HeaderAlignment = taCenter
+      Width = 63
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'Counter'
+    end
+    object BilincsGridAzonosito: TdxDBGridMaskColumn
+      Caption = 'Azonosító'
+      HeaderAlignment = taCenter
+      Width = 70
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'Azonosito'
+    end
+    object BilincsGridFestes: TdxDBGridPickColumn
+      Caption = 'Festés'
+      HeaderAlignment = taCenter
+      Width = 54
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'Festes'
+      Items.Strings = (
+        'S-TU 009 (ált. idõjárásálló)'
+        'S-TU 029 (Norsok)'
+        'S-TU 033 (tengervízálló)'
+        'S-TU 049 (NOV)'
+        'S-TU 050 (Huisman)'
+        'S-TU 061 (Norsok,víz alatti)'
+        'Tûzihorganyzott')
+    end
+    object BilincsGridMegjegyzes: TdxDBGridColumn
+      Caption = 'Megjegyzés'
+      HeaderAlignment = taCenter
+      Width = 79
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'Megjegyzes'
+    end
+    object BilincsGridRogzitette: TdxDBGridColumn
+      Caption = 'Rögzítette'
+      Color = clSilver
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      ReadOnly = True
+      TabStop = False
+      Width = 72
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'Rogzitette'
+    end
+    object BilincsGridRogzIdopont: TdxDBGridColumn
+      Caption = 'Idõpont'
+      Color = clSilver
+      DisableEditor = True
+      HeaderAlignment = taCenter
+      ReadOnly = True
+      TabStop = False
+      Width = 59
+      BandIndex = 0
+      RowIndex = 0
+      FieldName = 'RogzIdopont'
+    end
+  end
+  object FormPlacement1: TFormPlacement
+    IniFileName = 'D:\ContiProgs\HoseSlave\HoseSlave.ini'
+    IniSection = 'BilincsForm'
+    MinMaxInfo.MinTrackHeight = 241
+    MinMaxInfo.MinTrackWidth = 549
+    Left = 56
+    Top = 48
+  end
+  object BilincsGridPopupMenu: TPopupMenu
+    Left = 56
+    Top = 96
+    object Azsszesttelkitltseakivlasztotttartalommal1: TMenuItem
+      Caption = 'Az összes üres cella kitöltése a kiválasztott tartalommal'
+      OnClick = Azsszesttelkitltseakivlasztotttartalommal1Click
+    end
+  end
+end

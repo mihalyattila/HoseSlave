@@ -1,0 +1,14 @@
+program Loader;
+
+uses
+  Forms,
+  PrgUpdaterFormU in 'PrgUpdaterFormU.pas' {PrgUpdaterForm};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.Title := 'NormaLoader';
+  Application.CreateForm(TPrgUpdaterForm, PrgUpdaterForm);
+  Application.Run;
+end.

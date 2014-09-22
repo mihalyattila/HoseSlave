@@ -1,0 +1,1031 @@
+object RendMinReport: TRendMinReport
+  Left = 0
+  Top = 0
+  Width = 1123
+  Height = 794
+  Frame.Color = clBlack
+  Frame.DrawTop = False
+  Frame.DrawBottom = False
+  Frame.DrawLeft = False
+  Frame.DrawRight = False
+  DataSet = Dm.qRendMin
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Arial'
+  Font.Style = []
+  Functions.Strings = (
+    'PAGENUMBER'
+    'COLUMNNUMBER'
+    'REPORTTITLE')
+  Functions.DATA = (
+    '0'
+    '0'
+    #39#39)
+  Options = [FirstPageHeader, LastPageFooter]
+  Page.Columns = 1
+  Page.Orientation = poLandscape
+  Page.PaperSize = A4
+  Page.Values = (
+    100
+    2100
+    100
+    2970
+    100
+    100
+    0)
+  PrinterSettings.Copies = 1
+  PrinterSettings.Duplex = False
+  PrinterSettings.FirstPage = 0
+  PrinterSettings.LastPage = 0
+  PrinterSettings.OutputBin = Auto
+  PrintIfEmpty = True
+  SnapToGrid = True
+  Units = MM
+  Zoom = 100
+  object QRBand1: TQRBand
+    Left = 38
+    Top = 38
+    Width = 1047
+    Height = 67
+    Frame.Color = clBlack
+    Frame.DrawTop = True
+    Frame.DrawBottom = True
+    Frame.DrawLeft = True
+    Frame.DrawRight = True
+    AlignToBottom = False
+    Color = clWhite
+    ForceNewColumn = False
+    ForceNewPage = False
+    Size.Values = (
+      177.270833333333
+      2770.1875)
+    BandType = rbTitle
+    object QRLabel1: TQRLabel
+      Left = 8
+      Top = 40
+      Width = 108
+      Height = 19
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        50.2708333333333
+        21.1666666666667
+        105.833333333333
+        285.75)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = True
+      AutoStretch = False
+      Caption = 'Rendelésszám:'
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      FontSize = 12
+    end
+    object QRDBText1: TQRDBText
+      Left = 120
+      Top = 40
+      Width = 113
+      Height = 19
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        50.2708333333333
+        317.5
+        105.833333333333
+        298.979166666667)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Color = clWhite
+      DataSet = Dm.qRendMin
+      DataField = 'RendSz'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      FontSize = 12
+    end
+    object QRImage1: TQRImage
+      Left = 7
+      Top = 8
+      Width = 137
+      Height = 25
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        66.1458333333333
+        18.5208333333333
+        21.1666666666667
+        362.479166666667)
+      Picture.Data = {
+        07544269746D61703E100000424D3E1000000000000036040000280000008A00
+        0000160000000100080000000000080C00000000000000000000000100000001
+        0000000000000000800000800000008080008000000080008000808000008080
+        8000C0DCC000F0CAA600AA3F2A00FF3F2A00005F2A00555F2A00AA5F2A00FF5F
+        2A00007F2A00557F2A00AA7F2A00FF7F2A00009F2A00559F2A00AA9F2A00FF9F
+        2A0000BF2A0055BF2A00AABF2A00FFBF2A0000DF2A0055DF2A00AADF2A00FFDF
+        2A0000FF2A0055FF2A00AAFF2A00FFFF2A000000550055005500AA005500FF00
+        5500001F5500551F5500AA1F5500FF1F5500003F5500553F5500AA3F5500FF3F
+        5500005F5500555F5500AA5F5500FF5F5500007F5500557F5500AA7F5500FF7F
+        5500009F5500559F5500AA9F5500FF9F550000BF550055BF5500AABF5500FFBF
+        550000DF550055DF5500AADF5500FFDF550000FF550055FF5500AAFF5500FFFF
+        550000007F0055007F00AA007F00FF007F00001F7F00551F7F00AA1F7F00FF1F
+        7F00003F7F00553F7F00AA3F7F00FF3F7F00005F7F00555F7F00AA5F7F00FF5F
+        7F00007F7F00557F7F00AA7F7F00FF7F7F00009F7F00559F7F00AA9F7F00FF9F
+        7F0000BF7F0055BF7F00AABF7F00FFBF7F0000DF7F0055DF7F00AADF7F00FFDF
+        7F0000FF7F0055FF7F00AAFF7F00FFFF7F000000AA005500AA00AA00AA00FF00
+        AA00001FAA00551FAA00AA1FAA00FF1FAA00003FAA00553FAA00AA3FAA00FF3F
+        AA00005FAA00555FAA00AA5FAA00FF5FAA00007FAA00557FAA00AA7FAA00FF7F
+        AA00009FAA00559FAA00AA9FAA00FF9FAA0000BFAA0055BFAA00AABFAA00FFBF
+        AA0000DFAA0055DFAA00AADFAA00FFDFAA0000FFAA0055FFAA00AAFFAA00FFFF
+        AA000000D4005500D400AA00D400FF00D400001FD400551FD400AA1FD400FF1F
+        D400003FD400553FD400AA3FD400FF3FD400005FD400555FD400AA5FD400FF5F
+        D400007FD400557FD400AA7FD400FF7FD400009FD400559FD400AA9FD400FF9F
+        D40000BFD40055BFD400AABFD400FFBFD40000DFD40055DFD400AADFD400FFDF
+        D40000FFD40055FFD400AAFFD400FFFFD4005500FF00AA00FF00001FFF00551F
+        FF00AA1FFF00FF1FFF00003FFF00553FFF00AA3FFF00FF3FFF00005FFF00555F
+        FF00AA5FFF00FF5FFF00007FFF00557FFF00AA7FFF00FF7FFF00009FFF00559F
+        FF00AA9FFF00FF9FFF0000BFFF0055BFFF00AABFFF00FFBFFF0000DFFF0055DF
+        FF00AADFFF00FFDFFF0055FFFF00AAFFFF00FFCCCC00FFCCFF00FFFF3300FFFF
+        6600FFFF9900FFFFCC00007F0000557F0000AA7F0000FF7F0000009F0000559F
+        0000AA9F0000FF9F000000BF000055BF0000AABF0000FFBF000000DF000055DF
+        0000AADF0000FFDF000055FF0000AAFF000000002A0055002A00AA002A00FF00
+        2A00001F2A00551F2A00AA1F2A00FF1F2A00003F2A00553F2A00F0FBFF00A4A0
+        A000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+        FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFF6FFFFFFFFAFFFB3FFFFFFF6FFFFFFF6F6FFFFFFAFFFFFFFB3FFFFFFFFD1
+        F6F6FFFFFFFFF6FFFFFFFFFFFFB3FFFFF6F6FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFF6FFB3FFFFFFFFFFF6F6F6FFF6FFFFFFFFFFD1FFB3FFFFFFD1FFFFB3FFFFF6
+        FFFFFFFFB3FFB3FFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6F6F6FFF6F6F6FFFFF6F6FFF6
+        D1FFFFF6F6F6FFFFF6F6F6FFF6F6F6F6F6FFF6FFF6F6F6FFFFFFFFF6F6F6F6FF
+        F6F6F6F6F6F6FFFFFFFFFFFFF6F6FFFFF6F6F6FFFFFFFFB3F6F6F6F6FFF6FFFF
+        FFFFF6F6F6FFF6F6FFF6F6F6FFFFF6F6F6F6F6FFFFFFFFFF0000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6FFFF
+        F6F6FFF6F6F6FFFFF6F6F6FFF6FFFFF6F6F6FFFFF6F6FFFFF6F6F6F6F6FFF6F6
+        F6F6F6F6F6FFFFF6F6F6FFFFF6F6F6F6F6F6FFFFFFFFFFFFF6F6FFFFF6F6F6F6
+        FFFFFFF6F6F6F6F6FFFFF6FFFFFFF6F6F6FFF6F6FFFFF6F6FFFFF6F6F6B3F6FF
+        FFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFF6FFFFF6FFB3FFFFD1F6FFF6FFFFFFF6FFF6FFFFB3FFFFF6FFFF
+        FFFFFFFFFFFFFFFFFFFFF6FFFFFFFFB3B3B3B3FFFFF6FFFFFFFFFFFFFFFFFFF6
+        FFFFFFFFF6F6FFFFFFFFFFFFFFF6F6FFFFFFFFFFF6FFFFFFFFFFFFFFFFF6FFFF
+        D1FFFFF6FFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6FFD40736363609F6FFB3FF
+        FFF6F6FFFF8232363636D4F6F6FF093636363682FFF6F6FF095A0AF5F5040E5A
+        D4F6F6FFFF5A363636363636363636363209B35A3636365EFFF6F6F686365A36
+        5AAF083636363682D43636363636D4F6FFFF5E3636363282AFFFFFFF0000FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6F6F6FFFFFFFFFFFFFFFFFFFFFFFFF6FF
+        FFFF09F10404045EB3FFF6F6FFF6F6FFFF36F1F5040408FFFFFF5EF104040436
+        FFFFAF5AF5040604040AF5F10D09F6F6B3310404F50404F50AF104F5F55EFFF5
+        F104F50EF6F6FFAF0AF50404F587AFF1F504F53AAF31040AF1F15EB3F608F504
+        F504F55EFFF6FFFF0000F6FFFFF6FFF6F6F6F6F6F6F6F6F6FFF65E3609FFFFF6
+        F6F6FFFFF6F6F6F6F6F6FFFFFFF6090A0AF5045EFFF6F6F6FFFFF6F6FF5A040A
+        F50AABFFF6F683040A060436FFFF36F5040A04F5F1F1040A040A09FFF62E0604
+        0AF50A04040A0404045FF60A040A0432F6FFFF3604040604F508AF0A04F50436
+        F6AFF5040E04F58BFF36F5040A0432FFF6FFFFFF0000F6F6FFFFFFFFFFFFFFFF
+        FFFFFFFF080E0404F53609FFFFFFFFB3FFB3FFFFFFFFF6FFFFF609F504F5045A
+        B3FFF6FFFFF6F6F6F65E040A04F109FFF6FF09F50404F536FF6204F50A04F132
+        360E0AF504043109F63204F50A042E0E310E3232325EF6F50A040A0DF6FF860A
+        F504F50A04D408040AF5045AF6D15EF5040A040E09F5F50A04F509FFFFFFFFFF
+        0000F6F6FFAF5A3636365A363282AF3604F50AF50A04F55E095A07325E363636
+        5AFFF6FFFFF609040AF5F136AFAFD4AFF6FFFFFFF65A0404060408F6F6FF8204
+        F50A045AB332F10A04F109D1B3AF5A040EF5F136FF32040A0AF5F6F6F6F6F6FF
+        F6F6F60A040A0432F68B0D040A04060AF108AF0AF50A0436F6FFB332040AF5F5
+        0E04F504F55FF6FFFFFFFFFF0000F6F6FF09F5F1F504F1F132360A04F504040A
+        04F5F5F50E5E32F104F104F1F58BFFFFF6FF09F10A04040A0E04F504325EAFFF
+        FF36F50A04F509D9B3B35FF50AF5F55EAFF1040AF10EAFF6F6FFD4F5040A0432
+        B33204F504F5AFF6B3FFAFD1F6F6F60AF50A0436F632F5040AF50A04F509AFF5
+        0404045EF6FFFF092D040A04040A060436FFFFF6F6FFFFFF0000F6FFFF36040A
+        040A0E360EF5F5040A06040AF5040A04040A36360E040AF50436F6FFF6F60904
+        0AF50AF504F50A0604F53609FF5A04F50A04F50AF5F5F504040A043609F50406
+        0432FFF6F6FFB33204F5040A8B32F50A040A0A0AF50AF50EAFB3F6040A040A36
+        09F50A0A0A040A04F5D48BF50A060436F6FFF6FF5EF5040AF10A04F5D4FFF6F6
+        FFFFFFFF0000F6FF090AF50A0AF5375E0AF1F106040A06040A0AF50A0A040A5F
+        36F5040AF504D4FFFFF609F5040AF5040A0404040A04F15AFF36040406040A04
+        F10A0AF50AF5045A09F10E04F536FFF6F6F6FF36F50A0AF5083204F504F50406
+        040604F5D4FFB3F50AF504123204F5F10EF5F50AF1D4D90404F50436F6F6F6F6
+        B332F50A0AF50409FFF6F6FFFFFFFFFF0000FFFF5EF50404F504F136360EF104
+        F504F504F50A0404F532360EF1040AF504F55AFFFFF609F50A040A325E5E5A0A
+        F50A040EF65AF50A04F50AF50A04F5040AF5045E090404F50436FFFFF6F6F632
+        04F5040AAF0EF504060A0404040404F5AFF6FF0AF5040A04F50A04325E0E0A04
+        0D09AFF50A0A0436F6FFF6FFB33604F504F50A5FB3FFF6FFFFFFFFFF0000FFAF
+        0D040AF50AF50AF10A5A5BF5040A04060A04F50E5E360AF50A0AF50A0A0A31AF
+        FFF609F504F5045EFFFFB35A04F50AF18B5A04F5F50AF504F50A040AF504045E
+        09F50A0AF10AB3F6F6F6D10AF50A0AF5AF3204F50A045E5E5E835E5AFFF6AFF5
+        0A040AF5F10A0409D40404F5048BAF04F504F536F6FFFFF65E040A040AF504F5
+        08F6F6FFFFF6FFFF0000FFFFF6F6AFF6AFF6F6AFAFF6B3D432F10A0404F55AAF
+        FFAFF6F6F6F6F6F6F6F6D1FFF6FF09040A06045AAFFFD1360A040AF5AF36F10A
+        040A82AFF6B35EF5040A045EAF0DF10A0AF109FFFFB35EF504F5045AF60EF504
+        F50AFFFFFFFFF6FFF6F6F60AF106040A0AF1F7F682F50A0AF108AFF10A0A0436
+        F6F6F609F1F50406040A0AF10E8BFFF6FFFFFFFF0000FFFFFFF6F6F6F6F6FFFF
+        F6F6FFFFAF09F5F13209B3FFF6F6F6FFF6FFF6FFF6FFFFFFF6FF09F50404F50E
+        5E3A360D040A040AB336F10A04F5D4FFF6FF5E0AF50A045AF636F1F50AF50A5E
+        093AF5040A04F109B332040A040A5E5E5E5E5F5E5EAFAF0D040AF50A0432AFF6
+        0904F5040A088B0A04F50436F6FFF636040AF50436040A04F55AAFFFF6FFFFFF
+        0000FFFFFFFFFFFFFFFFFFFFF6F6F6FFFFB3D409AFF6FFF6F6F6FFFFFFFFFFFF
+        FFFFFFF6B3F609F10A06040AF1F5F1040AF5F15AFF36F10A0A0408FFF6B382F5
+        040A0436FFD432F1040E0406F104F50A0A045AB3F60D0A0AF10A0404F504F504
+        F58BFFF504F50A04F509FFF609F50A0A0408D4F50A0A045AFFFF09040A0A0432
+        8732040E04F509F6FFF6FFFF0000FFFFFFFFFFFFFFFFFFFFFFF6F6FFFFFFFFFF
+        FFFFF6F6F6F6FFFFFFFFFFFFFFFFF6F6F6FF09F104040A040A040A04F5045AAF
+        F636F104040A09FFF6FF0904040A0436FFFF860EF1040A040A0A0A04F536AFF6
+        B33204040A040A040A040A04F58BFFF5040A04F536B3F6F609040404F1D4AFF5
+        04F50436FFAF0D040A04F562FF82F104F5040E09FFF6FFFF0000FFFFFFFFFFFF
+        FFFFFFFFFFFFF6F6F6F6FFF6FFFFFFFFF6FFFFFFFFFFFFFFFFFFFFFFF6F6090A
+        F5F5F1F50AF10AF5325EAFFFFF07F5F50AF108FFF6FF82F5F5F5F15ED1FFFF09
+        360AF504F504F10A5AB3FFF6F632F5F5F50AF5F5F5F1F50AF508AF32F1F5F132
+        09B3FFFF820AF50AF508D4F50AF5F15E085AF1F5F5F532F6F6F60EF10AF1F15A
+        F6F6FFFF0000FFFFFFFFFFFFFFFFFFFFFFF6FFF6F6F6FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFB3F6F6FFFFAFAFAFAFAFD4AFAFAFAFFFFFFFFFAFD4AFAFAFAFFF
+        F6FFFFAFAFAFAFAFFFF6F6FFFFAF09820982D4AFF6FFFFF6FFAFAFAFAFAFAFAF
+        AFAFAFAF08F6FFAFAFB3AFAFFFF6F6F6FFAFD9AFAFF6F6D4AFAFAFFFF6D4AFAF
+        AFAFAFFFF6F6B3D4AFAFAFAFFFF6FFFF0000FFFFFFFFFFFFFFFFF6F6FFFFFFFF
+        FFFFFFFFFFFFFFFFF6F6FFFFFFFFFFFFFFFFFFF6F6F6FFD1FFFFFFFFF6FFFFFF
+        F6F6B3F6FFFFFFFFFFF6FFFFF6F6FFFFFFFFB3F6FFFFF6B3FFFFFFF6F6FFFFFF
+        FFF6FFFFF6FFFFF6F6FFFFF6F6FFFFFFFFF6F6FFFFF6F6FFFFF6FFF6F6FFF6F6
+        FFF6F6FFFFFFFFF6F6FFFFAFFFFFFFD1F6F6F6F6F6FFFFFFF6FFFFFF0000FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        F6F6FFFFFFF6FFF6FFFFF6FFFFFFFFFFFFFFFFF6F6F6FFFFF6F6FFFFF6F6F6F6
+        FFFFFFF6F6F6FFF6F6F6F6FFFFF6FFF6FFFFF6F6F6F6F6F6F6F6FFFFFFF6F6F6
+        FFF6F6FFFFFFFFF6F6FFF6F6F6F6F6F6FFF6FFF6F6FFF6FFF6FFFFFFFFFFF6F6
+        F6F6F6F6FFFFFFFF0000}
+    end
+  end
+  object QRGroup1: TQRGroup
+    Left = 38
+    Top = 105
+    Width = 1047
+    Height = 52
+    Frame.Color = clBlack
+    Frame.DrawTop = False
+    Frame.DrawBottom = False
+    Frame.DrawLeft = False
+    Frame.DrawRight = False
+    AlignToBottom = False
+    Color = clWhite
+    ForceNewColumn = False
+    ForceNewPage = False
+    Size.Values = (
+      137.583333333333
+      2770.1875)
+    Expression = 'qRendMin.TetelSrsz'
+    FooterBand = QRBand2
+    Master = Owner
+    ReprintOnNewPage = False
+    object QRLabel12: TQRLabel
+      Left = 0
+      Top = 6
+      Width = 1048
+      Height = 21
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        55.5625
+        0
+        15.875
+        2772.83333333333)
+      Alignment = taRightJustify
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Caption = ' '
+      Color = clSilver
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRDBText2: TQRDBText
+      Left = 104
+      Top = 8
+      Width = 25
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        275.166666666667
+        21.1666666666667
+        66.1458333333333)
+      Alignment = taRightJustify
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Color = clWhite
+      DataSet = Dm.qRendMin
+      DataField = 'TetelSrsz'
+      Transparent = True
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRDBText3: TQRDBText
+      Left = 264
+      Top = 8
+      Width = 265
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        698.5
+        21.1666666666667
+        701.145833333333)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Color = clWhite
+      DataSet = Dm.qRendMin
+      DataField = 'Specifikacio'
+      Transparent = True
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRLabel2: TQRLabel
+      Left = 24
+      Top = 32
+      Width = 137
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        63.5
+        84.6666666666667
+        362.479166666667)
+      Alignment = taCenter
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Caption = 'Tipusnév'
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRLabel3: TQRLabel
+      Left = 168
+      Top = 32
+      Width = 97
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        444.5
+        84.6666666666667
+        256.645833333333)
+      Alignment = taCenter
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Caption = 'Rajzszám'
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRLabel4: TQRLabel
+      Left = 272
+      Top = 32
+      Width = 289
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        719.666666666667
+        84.6666666666667
+        764.645833333333)
+      Alignment = taCenter
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Caption = 'Megnevezés'
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRLabel5: TQRLabel
+      Left = 568
+      Top = 32
+      Width = 73
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        1502.83333333333
+        84.6666666666667
+        193.145833333333)
+      Alignment = taCenter
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Caption = 'Darabszám'
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRLabel6: TQRLabel
+      Left = 648
+      Top = 32
+      Width = 65
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        1714.5
+        84.6666666666667
+        171.979166666667)
+      Alignment = taCenter
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Caption = 'Kiadva'
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRLabel8: TQRLabel
+      Left = 8
+      Top = 8
+      Width = 93
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        21.1666666666667
+        21.1666666666667
+        246.0625)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = True
+      AutoStretch = False
+      Caption = 'Tétel sorszám:'
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRLabel9: TQRLabel
+      Left = 176
+      Top = 8
+      Width = 83
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        465.666666666667
+        21.1666666666667
+        219.604166666667)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = True
+      AutoStretch = False
+      Caption = 'Specifikáció:'
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRLabel11: TQRLabel
+      Left = 720
+      Top = 32
+      Width = 65
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        1905
+        84.6666666666667
+        171.979166666667)
+      Alignment = taCenter
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Caption = 'Egyenleg'
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+  end
+  object QRBand2: TQRBand
+    Left = 38
+    Top = 193
+    Width = 1047
+    Height = 2
+    Frame.Color = clBlack
+    Frame.DrawTop = False
+    Frame.DrawBottom = False
+    Frame.DrawLeft = False
+    Frame.DrawRight = False
+    AlignToBottom = False
+    Color = clWhite
+    ForceNewColumn = False
+    ForceNewPage = False
+    Size.Values = (
+      5.29166666666667
+      2770.1875)
+    BandType = rbGroupFooter
+  end
+  object QRBand3: TQRBand
+    Left = 38
+    Top = 174
+    Width = 1047
+    Height = 17
+    Frame.Color = clBlack
+    Frame.DrawTop = False
+    Frame.DrawBottom = False
+    Frame.DrawLeft = False
+    Frame.DrawRight = False
+    AlignToBottom = False
+    BeforePrint = QRBand3BeforePrint
+    Color = clWhite
+    ForceNewColumn = False
+    ForceNewPage = False
+    Size.Values = (
+      44.9791666666667
+      2770.1875)
+    BandType = rbDetail
+    object QRDBText9: TQRDBText
+      Left = 152
+      Top = 0
+      Width = 137
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        402.166666666667
+        0
+        362.479166666667)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Color = clWhite
+      DataSet = Dm.qRendMin
+      DataField = 'Sarzsszam'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsItalic]
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRLabel7: TQRLabel
+      Left = 74
+      Top = 0
+      Width = 71
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        195.791666666667
+        0
+        187.854166666667)
+      Alignment = taRightJustify
+      AlignToBand = False
+      AutoSize = True
+      AutoStretch = False
+      Caption = 'Sarzsszám:'
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRDBText10: TQRDBText
+      Left = 296
+      Top = 0
+      Width = 413
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        783.166666666667
+        0
+        1092.72916666667)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Color = clWhite
+      DataSet = Dm.qRendMin
+      DataField = 'Megjegyzes'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsItalic]
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+  end
+  object QRGroup2: TQRGroup
+    Left = 38
+    Top = 157
+    Width = 1047
+    Height = 17
+    Frame.Color = clBlack
+    Frame.DrawTop = False
+    Frame.DrawBottom = False
+    Frame.DrawLeft = False
+    Frame.DrawRight = False
+    AlignToBottom = False
+    Color = clWhite
+    ForceNewColumn = False
+    ForceNewPage = False
+    Size.Values = (
+      44.9791666666667
+      2770.1875)
+    Expression = 'qRendMin.MinId'
+    FooterBand = QRBand4
+    Master = Owner
+    ReprintOnNewPage = False
+    object QRDBText6: TQRDBText
+      Left = 24
+      Top = 0
+      Width = 137
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        63.5
+        0
+        362.479166666667)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Color = clWhite
+      DataSet = Dm.qRendMin
+      DataField = 'Tipusnev'
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRDBText4: TQRDBText
+      Left = 168
+      Top = 0
+      Width = 97
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        444.5
+        0
+        256.645833333333)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Color = clWhite
+      DataSet = Dm.qRendMin
+      DataField = 'Rajzszam'
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRDBText5: TQRDBText
+      Left = 272
+      Top = 0
+      Width = 289
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        719.666666666667
+        0
+        764.645833333333)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Color = clWhite
+      DataSet = Dm.qRendMin
+      DataField = 'Megnevezes'
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRDBText7: TQRDBText
+      Left = 568
+      Top = 0
+      Width = 72
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        1502.83333333333
+        0
+        190.5)
+      Alignment = taCenter
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Color = clWhite
+      DataSet = Dm.qRendMin
+      DataField = 'Darabszam'
+      Mask = '#'
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRDBText8: TQRDBText
+      Left = 648
+      Top = 0
+      Width = 64
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        1714.5
+        0
+        169.333333333333)
+      Alignment = taCenter
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Color = clWhite
+      DataSet = Dm.qRendMin
+      DataField = 'KiadottDarab'
+      Mask = '#'
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object QRExpr1: TQRExpr
+      Left = 719
+      Top = 0
+      Width = 65
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        1902.35416666667
+        0
+        171.979166666667)
+      Alignment = taCenter
+      AlignToBand = False
+      AutoSize = False
+      AutoStretch = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      Color = clWhite
+      ParentFont = False
+      ResetAfterPrint = False
+      Transparent = False
+      WordWrap = True
+      Expression = 'qRendMin.KiadottDarab - qRendMin.Darabszam'
+      FontSize = 10
+    end
+  end
+  object QRBand4: TQRBand
+    Left = 38
+    Top = 191
+    Width = 1047
+    Height = 2
+    Frame.Color = clBlack
+    Frame.DrawTop = False
+    Frame.DrawBottom = False
+    Frame.DrawLeft = False
+    Frame.DrawRight = False
+    AlignToBottom = False
+    Color = clWhite
+    ForceNewColumn = False
+    ForceNewPage = False
+    Size.Values = (
+      5.29166666666667
+      2770.1875)
+    BandType = rbGroupFooter
+  end
+  object QRBand5: TQRBand
+    Left = 38
+    Top = 195
+    Width = 1047
+    Height = 26
+    Frame.Color = clBlack
+    Frame.DrawTop = False
+    Frame.DrawBottom = False
+    Frame.DrawLeft = False
+    Frame.DrawRight = False
+    AlignToBottom = False
+    Color = clWhite
+    ForceNewColumn = False
+    ForceNewPage = False
+    Size.Values = (
+      68.7916666666667
+      2770.1875)
+    BandType = rbPageFooter
+    object QRLabel10: TQRLabel
+      Left = 8
+      Top = 2
+      Width = 64
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        21.1666666666667
+        5.29166666666667
+        169.333333333333)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = True
+      AutoStretch = False
+      Caption = 'Készítette:'
+      Color = clWhite
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+    object Keszitette: TQRLabel
+      Left = 80
+      Top = 2
+      Width = 60
+      Height = 17
+      Frame.Color = clBlack
+      Frame.DrawTop = False
+      Frame.DrawBottom = False
+      Frame.DrawLeft = False
+      Frame.DrawRight = False
+      Size.Values = (
+        44.9791666666667
+        211.666666666667
+        5.29166666666667
+        158.75)
+      Alignment = taLeftJustify
+      AlignToBand = False
+      AutoSize = True
+      AutoStretch = False
+      Caption = 'Keszitette'
+      Color = clWhite
+      Transparent = False
+      WordWrap = True
+      FontSize = 10
+    end
+  end
+end

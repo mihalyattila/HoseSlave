@@ -1,0 +1,112 @@
+1.2.2.27	Értékesítési területek kezelése az adatimport során.
+1.2.2.28	InfoChip adatok exportálása a MEO adatok alapján. MEO adatok frissítési metódusának módosítása.
+1.2.2.29	Értékesítési területek kezelése az új rendelések importja során.
+1.2.2.30	MEO adatexport módosítása
+1.2.2.33	Biztonsági szerelvények kiosztási metódusának módosítása
+1.2.2.34	Márkázási rajzok kezelése
+1.2.2.35	Csatlakozó pozícionálása, rajz keresõ.
+1.2.2.36	MfCikkszam modul módosítása. Az új három szintû darabjegyzékhez igazodva újabb oszlopok létrehozása.
+1.2.2.37	Tömlõ darabszám függõ/független egyéb alkatrészek kezelése.
+1.2.2.38	Konstrukció és tömlõvég legnagyobb átmérõk kezelése. Egyéb alaktrészek kezelésének módosítása.
+1.2.2.39	Az "Adatok importtálása adatlapból" funkció bõvítése a tömlõtest és a tömlõvégek átmérõinek automatikus kiegészítésével.
+1.2.2.41	Csatlakozó nélküli tömlõk átmérõinek kezelése.
+1.2.2.42	Emelõbilincs és bizt.bilincs azonosítók kezelése. Márkázási utasítások kezelésének módosítása.
+1.2.2.43	Az adatlapon, az AutoCAD-es rajzzal rendelkezõ elemeknél, a rajz behívásának lehetõsége. A rajz keresés kiterjesztése az összes indexelt rajzra.
+1.2.2.44	"Technikai" okok miatt módosult.
+1.2.2.45	A program adatbázisának megváltoztatása Anorma -> HoseMaster
+1.2.2.46	Az egyik végén utólag fúrt karima feltételeinek figyelése. A dokumentumok kezelése - MSO rajzlista.
+1.2.2.47	Az MSO rajzlista módosítása. A csatlakozók kezelésének módosítása.
+1.2.2.48	Rajzok behívása a "Csatlakozó" fülön.
+1.2.2.49	Automatikus filter beállítása a "Csatlakozó" fülön.
+1.2.2.50	Az MSO rajzlista módosítása, kibõvítése az útvonal megadásának lehetõségével.	
+1.2.2.51	Az "Átvételi uatsítás készítése" során tapasztalt kerekítési módszer (bankár módszer) javítása. A feldolgozatlan, de törölt rendelés tételek jelölésének megszüntetése.
+1.2.2.52	A csatlakozók fülön szereplõ módosítási kezdemények visszaállítása.
+1.2.2.53	A csatlakozók fül kiegészítése a technológiai lapok tartalmával, további kiegészítések.
+1.2.2.54	A csatlakozó fül SQL szintû jogosultsági hiányosságainak programszintû kezelése. A technológiai lapok ellenõrzött státuszának figyelése.
+1.2.2.55	A technológiai lapok kezelésének módosítása.
+1.2.2.56	A technológiai lapok módosítás elõtti frissítésének megoldása.A program módosítások történetiségének megjelenítése.
+1.2.2.57	A csatlakozók felcserélésekor frissíti az "Egyéb alkatrészek" listát. Az "Egyéb tartozék"-ot nem tartalmazó csatlakozók behívásakor jelentkezõ hibaüzenet megszüntetése.
+1.2.2.58	Az átvételi készítésének kiegészítése csatlakozó L1 hossz, csatlakozó tömeg, tömlõtest tömeg és össztömeg adatokkal.
+1.2.2.59	Az "Adatlapok", "Egyéb alkatrészek", "Megnevezés" mezõ hosszának növelése 50-re. Az "Alkatrészlista export" tételeinek számozása az SAP-ban használt pozició szerint, törölt elemek jelölése. "Toolbar"-ok bevezetése az egész modulban.
+1.2.2.60	Kisebb módosítások.
+1.2.2.61	A "Csomagolási adatok" mûködési rendellenességeinek javítása.
+1.2.2.62	Tömlõ nevek kezelése, tömlõ nevek és szabványok átvitele az átvételi utasításokba. A rendelésekhez tartozó átvételi utasítások jogosultság függõ megnyitása.
+1.2.2.63	Tömlõ nevek karbantartó moduljának bevezetése.
+1.2.2.64	Tömlõ nevek kezelésének módosítása. Tárolt eljárás garantálja a megnevezés egyediségét.
+1.2.2.65	A rendelésekhez tartozó átvételi utasítások megnyitásának kiterjesztése a "mûfej" tételekre.
+1.2.2.66	A rendelések módosításainak korlátozása a "Rendelések" fülön. SAP adatok importálásának optimalizálása. Átvételi utasítás készítésének módosítása.
+1.2.2.67	Az összeállítási rajzok második lapjának megnyitása, ahol az értelmezhetõ.
+1.2.2.68	A könyvjelzõk kezelésének módosítása, lista szerinti navigáció.
+1.2.2.69	A "Csomagolási adatok" fül kiegészítése könyvjelzõ funkcióval.
+1.2.3.0		Átvételik sorszámozásának módosítása a SAP poz. szerint. A MEO nyilvántartás beviteli ellenõrzésének kiegészítése a névleges és a mért hossz értékek összevetésével.
+1.2.3.1		Anyagszükséglet számító módosítása.
+1.2.3.2		Az átvételi készítésének kiegészítése a csõmag tûréssel.
+1.2.3.3		A cikkszámok felületrõl ugrás az adatlapokra és vissza.
+1.2.3.4		Az "MfCikkszám" bõvítése a VI-VII-es hajókra vonatkozó adatokkal.
+1.2.3.5		Új csoport struktúra bevezetése a dokumentumok kezelésében.
+1.2.3.6		Márkázási uatsítások kezelésének módosítása. A régi és az új struktúra egyesítése. (dwg, dft)
+1.2.3.7		Márkázási utasítások kezelésének módosítása. Alcsoportok megjelenítése a rendelések fülön.
+1.2.3.8		Márkázási utasítások kezelésének módosítása. Kitöltetlen márkázási rajz mezõ esetén a grid összecsukása.
+1.2.3.9		Csatlakozó adatok kiegészítése SSRC és MP oszlopokkal. Adatlapok konstrukciós keresésének kibõvítése a csatlakozó rajzszámára történõ szûrés lehetõségével.
+1.2.3.10	A "Dokumentumok" fülön az érvényesség bevezetése. A rendeléseknél a márkázási rajz választó ablak módosítása az érvényesség megjelenítésével.
+1.2.3.11	Az érvényesség mentési problémájának javítása. A HM konstrukcióknál az érvénytelenek kiszûrése.
+1.2.3.12	Az "MfCikkszám" fül módosítása, a cikkszámokkal kapcsolatos státuszok kezelése.
+1.2.3.13	Hibajavítás
+1.2.3.14	Az adatlapokról elérhetõ, az alkatrészekre vonatkozó lekérdezésekben, csak a "nullás" státuszú elemek megjelenítése.
+1.2.3.15	Az "MfCikkszám" fül módosítása, új rekord létrehozása meglévõ alapján.
+1.2.3.16	Az "MfCikkszám" fülön minta alapján létrehozható rekordok státuszainak alaphelyzetbe állítása.
+1.2.3.17	Az "MfCikkszám" fül látható adatainak vágólapra másolhatóságának megteremtése.
+1.2.3.18	Csatlakozó adatok másolása új rekordba. A megjelenített csatlakozó adatok másolása vágólapra.
+1.2.3.19	Bilincs adatok kezelésének kiegészítése megjegyzés mezõvel. Festés választéklista bevezetése. A festés és a megjegyzés exportálása alkatrészlistába és átvételi utasításba.
+1.2.3.20	MEO adatok másolása, csoportos beillesztése. A csomagolási fülön a PackId megjelenítése. Az átvételi és az alakatrészlista módosítása a bilincs jellemzõk megjelenítése vonatkozásában.
+1.2.3.21	MT rajzkönyv bevezetése.
+1.2.3.22	Szerelvények, horony védelem, kiküldött rajzok bevezetése.
+1.2.3.23	Átvételi utasítások behívása a SharePoint-ról.
+1.2.3.24	Inspektor megjegyzés beviteli hibájának módosítása.
+1.2.3.25	SharePoint dokumentumok megnyitási metódusának módosítása.
+1.2.3.26	MSO rajzlista fájlnév bevitel ellenõrzése, automatikus generálás.
+1.2.3.27	Rajz keresési funkció elhelyezése a rendelések fülre. Általános ACAD rajz keresõ funkció létrehozása az aktív szöveg alapján. (Ctrl+F)
+1.2.3.28	Biztonsági láncok kezelésének módosítása az egyedi azonosítók elhagyásával.
+1.2.3.29	Csatlakozó PSL szintek kezelése.
+1.2.3.30	Az emelõ -, és a biztonsági bilincskhez tartozó adatok megjelenítése az "Egyéb mûszaki adatok" fülön.
+1.2.3.31	Külsõ védelem kezelésének módosítása. A mûanyag védelem és a fedett v. nem fedett helix egyidejû alkalmazásának engdelyezése.
+1.2.3.32	Érvényességi szûrõ bevezetése, beállításának mentése és automatikus visszaállítása az "MSO rajzlista" felületen.
+1.2.3.33	Bilincs és hüvely elõrendelés fax elõállítása. Tömlõ megnevezés beviteli mezõ méretének növelése.
+1.2.3.34	Mûszaki adatok másolása és beillesztése funkció javítása, módosítása.
+1.2.3.35	Elõrendelések adatbeviteli felületének és a hozzá kapcsolódó riport bõvítése.
+1.2.3.36	A csomagolási felület módosítása. A rajz keresési funkció módosítása. (öá.2.lap behívása)
+1.2.3.37	Csomagolási hibajavítás.
+1.2.3.38	SharePoint2010-re áttérés miatti módosítások, valamint az átvételi utasítás generálásának módosítása.
+1.2.3.39	A SharePoint2010-hez hibásan megadott ConnectionString módosítása.
+1.2.3.40	Az "egyebek" és az "Ins.megjegyzések" kezelésének módosítása.
+1.2.3.41	Osztott hüvely jellemzõk bevezetése. Az új tuladonságok megjelenítése az adatlapokban, átvételikben és a kapcsolódó riportokban.
+1.2.3.42	Csatlakozó tartozékok tételeinek kijelölés alapján történõ másolása.
+1.2.3.43	Alkatrészlista export során az "Egyéb mûsz.megj." sorok kiemelése.
+1.2.3.44	E.b.-,B.b.-,O.h.jellemzõk Tûzihorganyzott típussal kiegészítése.
+1.2.3.45	"COM" értékesítési terület hozzáadása, az átvételi és az alaktrészlista készítésének módosítása.
+1.2.3.46	Csatlakozó technológia adatok változtatásakor megjelenõ, a függõségeket listázó ablak.
+1.2.3.47	Csatlakozó technológia adatok változtatásakor megjelenõ ablak megjelenítése csak létezõ függõségek esetén.
+1.2.3.48	Insp.megj. választéklista bevezetése, Norsok(víz alatti) festési rendszer bevitele, csatlakozók beépülõinek automatikus törlése.
+1.2.3.49	Csatlakozó törlési hiba javítása.
+1.2.3.50	Inspektor beviteli probléma javítása.
+1.2.3.51	Csomagoló eszköz kiválasztásának módosítása, a legutolsó pénznem megjegyzése.
+1.2.3.52	Rendelés import módosítása.
+1.2.3.53	MfCikkszámok "rendelésszám" és az "átvételi száma" mezõk típusának változtatása int-rõl varchar-ra.
+1.2.3.54	Az egyes rendelésekhez tartozó gyártási számok listázhatóságának kialakítása.
+1.2.3.55	Egy rendelésekhez tartozó SAP megjegyzések megjelenítése.
+1.2.3.56	A "Konstrukció elõfordulása" lekérdezés eredményhalmazának kibõvítése hossz -, és csomagolási adatokkal.
+1.2.3.57	A "Konstrukció elõfordulása" lekérdezés elemeinek másolása a vágólapra. Az "Átvételi utasítás készítése" bõvítése a SAP melléklettel.
+1.2.3.58	Az átvételi utasítások kiegészítése új szakaszokkal, és egyéb formai változások.
+1.2.3.59	A TMO rajztár beviteli szabályainak szigorítása, a fájlnév generálása rajzszám alapján.
+1.2.3.60	A TMO rajztár beviteli hibajavítás.
+1.2.3.61	Az átvételi utasítások szakaszai megenevezésének módosítása. 
+1.2.3.62	Az átvételi utasítások készítésének módosítása.
+1.2.3.63	Hibajavítás.
+1.2.3.64	"Mf cikkszámok" fülön "Darabjegyzék" mezõ bevezetése.
+1.2.3.65	Alkatrészlista változások követése email értesítéssel.
+1.2.3.66	Elõrendelések kiegészítése táblázatos megjelenítéssel és vágólapra másolással.
+1.2.3.67	Adatbázis beállítási hibajavítás.
+1.2.3.68	Kisebb módosítások.
+1.2.3.69	Koncepcionális fejlesztési módosítás.
+1.2.3.70	Program frissítési módosítás.
+1.2.3.71	Az SAP import adatok meglétének ellenõrzése, a hiányok megjelenítése. Figyelmeztetés az adatok felvitele során.

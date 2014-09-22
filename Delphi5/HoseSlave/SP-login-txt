@@ -1,0 +1,12 @@
+Provider=SQLOLEDB.1;
+Password=konf123;
+Persist Security Info=True;
+User ID=sdkonfuser2;
+Initial Catalog=SharePoint_Content_MainPage;
+Data Source=sdas001a;
+Use Procedure for Prepare=1;
+Auto Translate=True;
+Packet Size=4096;
+Workstation ID=SDD-FLU072;
+Use Encryption for Data=False;
+Tag with column collation when possible=False

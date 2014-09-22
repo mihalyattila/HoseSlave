@@ -1,0 +1,1 @@
+1.2.0.10	- Rendelések automatikus frissítése az SAP-ból, bõvítette mûszaki adattartalom, adatexport továbbfejlesztése

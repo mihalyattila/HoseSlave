@@ -1,0 +1,13 @@
+program RendSync;
+
+uses
+  Forms,
+  RendSyncFormU in 'RendSyncFormU.pas' {RendSyncForm};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TRendSyncForm, RendSyncForm);
+  Application.Run;
+end.
